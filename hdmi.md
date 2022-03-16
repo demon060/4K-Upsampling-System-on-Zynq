@@ -6,7 +6,7 @@
 - [hdmi 1.4a 3d](./hdmi%20spec/2010_03_04_3dextraction_hdmi_spec1.4a.pdf)：屁用没有的文档
 - [hdmi 1.4 feature](./hdmi%20spec/1dot4_feature_archive.pdf)：就一个大饼
 
-> 傻逼hdmi，1.4b 和2.0 的spec都不能公开下载，现在不知道怎么搞4K显示。
+> hdmi，1.4b 和2.0 的spec都不能公开下载，现在不知道怎么搞4K显示。
 
 ## guide
 
