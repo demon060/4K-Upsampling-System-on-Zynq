@@ -1,0 +1,1618 @@
+TRACE::2022-04-12.15:24:00::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:00::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:00::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:02::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:02::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:02::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-04-12.15:24:05::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:05::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2022-04-12.15:24:05::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper"
+		}]
+}
+TRACE::2022-04-12.15:24:05::SCWPlatform::Boot application domains not present, creating them
+TRACE::2022-04-12.15:24:05::SCWDomain::checking for install qemu data   : 
+TRACE::2022-04-12.15:24:05::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2022-04-12.15:24:05::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2022-04-12.15:24:05::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:05::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:05::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:05::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:05::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2022-04-12.15:24:05::SCWPlatform::Generating the sources  .
+TRACE::2022-04-12.15:24:05::SCWBDomain::Generating boot domain sources.
+TRACE::2022-04-12.15:24:05::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2022-04-12.15:24:05::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:05::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:05::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:05::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-04-12.15:24:05::SCWMssOS::No sw design opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:05::SCWMssOS::mss does not exists at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:05::SCWMssOS::Creating sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:05::SCWMssOS::Adding the swdes entry, created swdb E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:05::SCWMssOS::updating the scw layer changes to swdes at   E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:05::SCWMssOS::Writing mss at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:05::SCWMssOS::Completed writing the mss file at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2022-04-12.15:24:05::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2022-04-12.15:24:05::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2022-04-12.15:24:05::SCWBDomain::Completed writing the mss file at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2022-04-12.15:24:14::SCWPlatform::Generating sources Done.
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss||
+
+KEYINFO::2022-04-12.15:24:14::SCWMssOS::Could not open the swdb for E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+KEYINFO::2022-04-12.15:24:14::SCWMssOS::Could not open the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss is not found
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Cleared the swdb table entry
+TRACE::2022-04-12.15:24:14::SCWMssOS::No sw design opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::mss exists loading the mss file  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::Opened the sw design from mss  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::Adding the swdes entry E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2022-04-12.15:24:14::SCWMssOS::updating the scw layer about changes
+TRACE::2022-04-12.15:24:14::SCWMssOS::Opened the sw design.  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4035fad09b10c7e56c2d1e0aa05df8ff",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4035fad09b10c7e56c2d1e0aa05df8ff",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-04-12.15:24:14::SCWDomain::checking for install qemu data   : 
+TRACE::2022-04-12.15:24:14::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2022-04-12.15:24:14::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::No sw design opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::mss does not exists at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::Creating sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::Adding the swdes entry, created swdb E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::updating the scw layer changes to swdes at   E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::Writing mss at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::Completed writing the mss file at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2022-04-12.15:24:14::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2022-04-12.15:24:14::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4035fad09b10c7e56c2d1e0aa05df8ff",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:14::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:14::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:14::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:14::SCWMssOS::Completed writing the mss file at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2022-04-12.15:24:14::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2022-04-12.15:24:16::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2022-04-12.15:24:16::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-04-12.15:24:16::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2022-04-12.15:24:16::SCWSystem::Checking the domain zynq_fsbl
+LOG::2022-04-12.15:24:16::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2022-04-12.15:24:16::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2022-04-12.15:24:16::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2022-04-12.15:24:16::SCWSystem::Checking the domain standalone_domain
+LOG::2022-04-12.15:24:16::SCWSystem::Not a boot domain 
+LOG::2022-04-12.15:24:16::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-04-12.15:24:16::SCWDomain::Generating domain artifcats
+TRACE::2022-04-12.15:24:16::SCWMssOS::Generating standalone artifcats
+TRACE::2022-04-12.15:24:16::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2022-04-12.15:24:16::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/qemu/
+TRACE::2022-04-12.15:24:16::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2022-04-12.15:24:16::SCWMssOS::Could not open the swdb for E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+KEYINFO::2022-04-12.15:24:16::SCWMssOS::Could not open the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Cleared the swdb table entry
+TRACE::2022-04-12.15:24:16::SCWMssOS::No sw design opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::mss exists loading the mss file  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::Opened the sw design from mss  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::Adding the swdes entry E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2022-04-12.15:24:16::SCWMssOS::updating the scw layer about changes
+TRACE::2022-04-12.15:24:16::SCWMssOS::Opened the sw design.  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::Completed writing the mss file at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2022-04-12.15:24:16::SCWMssOS::Mss edits present, copying mssfile into export location E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-04-12.15:24:16::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-04-12.15:24:16::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2022-04-12.15:24:16::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-04-12.15:24:16::SCWMssOS::Copying to export directory.
+TRACE::2022-04-12.15:24:16::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-04-12.15:24:16::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2022-04-12.15:24:16::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2022-04-12.15:24:16::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-04-12.15:24:16::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2022-04-12.15:24:16::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2022-04-12.15:24:16::SCWPlatform::Started preparing the platform 
+TRACE::2022-04-12.15:24:16::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2022-04-12.15:24:16::SCWSystem::dir created 
+TRACE::2022-04-12.15:24:16::SCWSystem::Writing the bif 
+TRACE::2022-04-12.15:24:16::SCWPlatform::Started writing the spfm file 
+TRACE::2022-04-12.15:24:16::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-04-12.15:24:16::SCWPlatform::Completed generating the platform
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4035fad09b10c7e56c2d1e0aa05df8ff",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a87cde929401d3b25bc22b367ff4d19a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-04-12.15:24:16::SCWPlatform::updated the xpfm file.
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4035fad09b10c7e56c2d1e0aa05df8ff",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a87cde929401d3b25bc22b367ff4d19a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4035fad09b10c7e56c2d1e0aa05df8ff",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a87cde929401d3b25bc22b367ff4d19a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2022-04-12.15:24:16::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2022-04-12.15:24:16::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-04-12.15:24:16::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2022-04-12.15:24:16::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-04-12.15:24:16::SCWDomain::Generating domain artifcats
+TRACE::2022-04-12.15:24:16::SCWMssOS::Generating standalone artifcats
+TRACE::2022-04-12.15:24:16::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/
+TRACE::2022-04-12.15:24:16::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/qemu/
+TRACE::2022-04-12.15:24:16::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::Completed writing the mss file at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2022-04-12.15:24:16::SCWMssOS::Mss edits present, copying mssfile into export location E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-04-12.15:24:16::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-04-12.15:24:16::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-04-12.15:24:16::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-04-12.15:24:16::SCWMssOS::Copying to export directory.
+TRACE::2022-04-12.15:24:16::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-04-12.15:24:16::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2022-04-12.15:24:16::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2022-04-12.15:24:16::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-04-12.15:24:16::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2022-04-12.15:24:16::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2022-04-12.15:24:16::SCWPlatform::Started preparing the platform 
+TRACE::2022-04-12.15:24:16::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2022-04-12.15:24:16::SCWSystem::dir created 
+TRACE::2022-04-12.15:24:16::SCWSystem::Writing the bif 
+TRACE::2022-04-12.15:24:16::SCWPlatform::Started writing the spfm file 
+TRACE::2022-04-12.15:24:16::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-04-12.15:24:16::SCWPlatform::Completed generating the platform
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2022-04-12.15:24:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:16::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:16::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:16::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4035fad09b10c7e56c2d1e0aa05df8ff",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"a87cde929401d3b25bc22b367ff4d19a",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-04-12.15:24:16::SCWPlatform::updated the xpfm file.
+TRACE::2022-04-12.15:24:39::SCWPlatform::Clearing the existing platform
+TRACE::2022-04-12.15:24:39::SCWSystem::Clearing the existing sysconfig
+TRACE::2022-04-12.15:24:39::SCWBDomain::clearing the fsbl build
+TRACE::2022-04-12.15:24:39::SCWMssOS::Removing the swdes entry for  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:39::SCWMssOS::Removing the swdes entry for  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:39::SCWSystem::Clearing the domains completed.
+TRACE::2022-04-12.15:24:39::SCWPlatform::Clearing the opened hw db.
+TRACE::2022-04-12.15:24:39::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:39::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:39::SCWPlatform:: Platform location is E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:39::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:39::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:39::SCWPlatform::Removing the HwDB with name E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:39::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:39::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:39::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:39::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:39::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:39::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:39::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened new HwDB with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWReader::Active system found as  design_1_wrapper
+TRACE::2022-04-12.15:24:42::SCWReader::Handling sysconfig design_1_wrapper
+TRACE::2022-04-12.15:24:42::SCWDomain::checking for install qemu data   : 
+TRACE::2022-04-12.15:24:42::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2022-04-12.15:24:42::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-04-12.15:24:42::SCWMssOS::No sw design opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::mss exists loading the mss file  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Opened the sw design from mss  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Adding the swdes entry E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2022-04-12.15:24:42::SCWMssOS::updating the scw layer about changes
+TRACE::2022-04-12.15:24:42::SCWMssOS::Opened the sw design.  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2022-04-12.15:24:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2022-04-12.15:24:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWReader::No isolation master present  
+TRACE::2022-04-12.15:24:42::SCWDomain::checking for install qemu data   : 
+TRACE::2022-04-12.15:24:42::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2022-04-12.15:24:42::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::No sw design opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::mss exists loading the mss file  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Opened the sw design from mss  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Adding the swdes entry E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2022-04-12.15:24:42::SCWMssOS::updating the scw layer about changes
+TRACE::2022-04-12.15:24:42::SCWMssOS::Opened the sw design.  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2022-04-12.15:24:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWReader::No isolation master present  
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::In reload Mss file.
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2022-04-12.15:24:42::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2022-04-12.15:24:42::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Cleared the swdb table entry
+TRACE::2022-04-12.15:24:42::SCWMssOS::No sw design opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::mss exists loading the mss file  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Opened the sw design from mss  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Adding the swdes entry E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2022-04-12.15:24:42::SCWMssOS::updating the scw layer about changes
+TRACE::2022-04-12.15:24:42::SCWMssOS::Opened the sw design.  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Removing the swdes entry for  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::In reload Mss file.
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::No sw design opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::mss exists loading the mss file  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Opened the sw design from mss  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Adding the swdes entry E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2022-04-12.15:24:42::SCWMssOS::updating the scw layer about changes
+TRACE::2022-04-12.15:24:42::SCWMssOS::Opened the sw design.  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to open the hw design at E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA given E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA absoulate path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform::DSA directory E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Platform Path E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2022-04-12.15:24:42::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2022-04-12.15:24:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2022-04-12.15:24:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-04-12.15:24:42::SCWMssOS::Checking the sw design at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::DEBUG:  swdes dump  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2022-04-12.15:24:42::SCWMssOS::Sw design exists and opened at  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2022-04-12.15:24:42::SCWMssOS::Removing the swdes entry for  E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss

@@ -8,10 +8,15 @@
 - `ps_hello`：纯PS通过串口发出hello world
 - `hdmi_test`：纯PL驱动hdmi
 - `pl_rw_ps_ddr`：PL直接读取DDR（利用AXI4协议支持的HP高速访问端口）
+- `bram_test`：PS与PL通过BRAM交换数据
 - `net_test`：ETH echo server（对主机发送的字符进行回声）
 - `vdma_hdmi_out`：VDMA（利用Xilinx现有的IP，对已经存在于DDR中的图片进行直接读取显示）
 
 这些demo，在经过调试之后，都能正常的绑定引脚，加载至硬件启动，得到正确的输出。其中后三个demo是系统必须的组成部分。
+
+![vdma效果](img/display/vdma.jpg)
+
+目前看起来，VDMA的例程中就进行了一次HDMI buffer的更新，所以应当可以一张图片长期直出；并且注意到HDMI的分辨率实际上就是800*600。
 
 ## 硬件架构
 
@@ -45,7 +50,3 @@
 ### BRAM的使用
 
 黑金的教程中给出了RAM、ROM、FIFO三个用法，目前尚未试验。
-
-### PS与PL通信
-
-黑金的教程中给出了PS与PL通过BRAM通信的方法，目前尚未试验。
