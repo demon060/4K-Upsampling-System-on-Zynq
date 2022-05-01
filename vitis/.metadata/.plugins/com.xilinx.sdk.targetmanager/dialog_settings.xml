@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="upsampling-partial_bit"/>
+	<item value="_ide/bitstream/design_1_wrapper.bit" key="upsampling-bitFile"/>
+	<item value="upsampling" key="programfpga.sdxproject"/>
+	<item value="" key="upsampling-bmmFile"/>
+	<item value="false" key="upsampling-skip_rev_check"/>
+	<item value="Local" key="upsampling-target"/>
+	<item value="Auto Detect" key="upsampling-device"/>
+</section>

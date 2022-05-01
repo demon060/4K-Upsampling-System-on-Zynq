@@ -72,10 +72,7 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.cache/wt [current_project]
   set_property parent.project_path E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.xpr [current_project]
-  set_property ip_repo_paths {
-  E:/Code/4K-Upsampling-System-on-Zynq/ip_repo/Upsampling_Bayes_1.0
-  E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo
-} [current_project]
+  set_property ip_repo_paths E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo [current_project]
   update_ip_catalog
   set_property ip_output_repo E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

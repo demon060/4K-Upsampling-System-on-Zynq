@@ -1,0 +1,39 @@
+18:31:37 **** Build of configuration Debug for project upsampling ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/display_ctrl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/display_ctrl.d" -MT"src/display_ctrl.o" -o "src/display_ctrl.o" "../src/display_ctrl.c"
+'Finished building: ../src/display_ctrl.c'
+' '
+'Building file: ../src/dynclk.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/dynclk.d" -MT"src/dynclk.o" -o "src/dynclk.o" "../src/dynclk.c"
+'Finished building: ../src/dynclk.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'CheckData':
+../src/main.c:421:11: warning: assignment to 'u8 *' {aka 'unsigned char *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+  RxPacket =(UINTPTR) (&RxBufferPtr[loop_x*MAX_PKT_LEN]);
+           ^
+'Finished building: ../src/main.c'
+' '
+'Building target: upsampling.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "upsampling.elf"  ./src/display_ctrl.o ./src/dynclk.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: upsampling.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size upsampling.elf  |tee "upsampling.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1514452	   3560	5308128	6826140	 68289c	upsampling.elf
+'Finished building: upsampling.elf.size'
+' '
+
+18:31:51 Build Finished (took 13s.93ms)
+

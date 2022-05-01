@@ -1,10 +1,246 @@
-15:22:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\Code\4K-Upsampling-System-on-Zynq\vitis\temp_xsdb_launch_script.tcl
-15:22:54 INFO  : Registering command handlers for Vitis TCF services
-15:22:55 INFO  : XSCT server has started successfully.
-15:22:55 INFO  : Successfully done setting XSCT server connection channel  
-15:22:55 INFO  : plnx-install-location is set to ''
-15:22:55 INFO  : Successfully done setting workspace for the tool. 
-15:22:55 INFO  : Successfully done query RDI_DATADIR 
-15:24:42 INFO  : Successfully done sdx_reload_mss "E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss"
-15:24:42 INFO  : Successfully done sdx_reload_mss "E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
-15:25:32 INFO  : Example project xaxidma_example_simple_intr_1 has been created successfully.
+18:28:17 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\Code\4K-Upsampling-System-on-Zynq\vitis\temp_xsdb_launch_script.tcl
+18:28:19 INFO  : XSCT server has started successfully.
+18:28:19 INFO  : Successfully done setting XSCT server connection channel  
+18:28:19 INFO  : plnx-install-location is set to ''
+18:28:19 INFO  : Successfully done setting workspace for the tool. 
+18:28:19 INFO  : Successfully done query RDI_DATADIR 
+18:28:20 INFO  : Registering command handlers for Vitis TCF services
+18:31:37 INFO  : Checking for BSP changes to sync application flags for project 'upsampling'...
+18:32:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:32:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351A78781A' is selected.
+18:32:36 INFO  : 'jtag frequency' command is executed.
+18:32:36 INFO  : Context for 'APU' is selected.
+18:32:36 INFO  : System reset is completed.
+18:32:39 INFO  : 'after 3000' command is executed.
+18:32:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1' command is executed.
+18:32:42 INFO  : FPGA configured successfully with bitstream "E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit"
+18:32:42 INFO  : Context for 'APU' is selected.
+18:32:42 INFO  : Hardware design information is loaded from 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:32:42 INFO  : 'configparams force-mem-access 1' command is executed.
+18:32:42 INFO  : Context for 'APU' is selected.
+18:32:42 INFO  : Sourcing of 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl' is done.
+18:32:42 INFO  : 'ps7_init' command is executed.
+18:32:42 INFO  : 'ps7_post_config' command is executed.
+18:32:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:32:45 INFO  : The application 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:32:45 INFO  : 'configparams force-mem-access 0' command is executed.
+18:32:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1
+fpga -file E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:32:45 INFO  : Memory regions updated for context APU
+18:32:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:32:45 INFO  : 'con' command is executed.
+18:32:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:32:46 INFO  : Launch script is exported to file 'E:\Code\4K-Upsampling-System-on-Zynq\vitis\.sdk\launch_scripts\single_application_debug\debugger_upsampling-default.tcl'
+18:33:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:33:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1' command is executed.
+18:33:39 INFO  : FPGA configured successfully with bitstream "E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit"
+18:34:39 INFO  : Disconnected from the channel tcfchan#2.
+18:34:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:34:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351A78781A' is selected.
+18:34:41 INFO  : 'jtag frequency' command is executed.
+18:34:41 INFO  : Context for 'APU' is selected.
+18:34:41 INFO  : System reset is completed.
+18:34:44 INFO  : 'after 3000' command is executed.
+18:34:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1' command is executed.
+18:34:46 INFO  : FPGA configured successfully with bitstream "E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit"
+18:34:46 INFO  : Context for 'APU' is selected.
+18:34:46 INFO  : Hardware design information is loaded from 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:34:46 INFO  : 'configparams force-mem-access 1' command is executed.
+18:34:46 INFO  : Context for 'APU' is selected.
+18:34:46 INFO  : Sourcing of 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl' is done.
+18:34:46 INFO  : 'ps7_init' command is executed.
+18:34:46 INFO  : 'ps7_post_config' command is executed.
+18:34:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:34:50 INFO  : The application 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:34:50 INFO  : 'configparams force-mem-access 0' command is executed.
+18:34:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1
+fpga -file E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:34:50 INFO  : Memory regions updated for context APU
+18:34:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:34:50 INFO  : 'con' command is executed.
+18:34:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:34:50 INFO  : Launch script is exported to file 'E:\Code\4K-Upsampling-System-on-Zynq\vitis\.sdk\launch_scripts\single_application_debug\debugger_upsampling-default.tcl'
+18:35:13 INFO  : Disconnected from the channel tcfchan#3.
+18:35:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:35:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351A78781A' is selected.
+18:35:15 INFO  : 'jtag frequency' command is executed.
+18:35:15 INFO  : Context for 'APU' is selected.
+18:35:15 INFO  : System reset is completed.
+18:35:18 INFO  : 'after 3000' command is executed.
+18:35:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1' command is executed.
+18:35:20 INFO  : FPGA configured successfully with bitstream "E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit"
+18:35:20 INFO  : Context for 'APU' is selected.
+18:35:20 INFO  : Hardware design information is loaded from 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:35:20 INFO  : 'configparams force-mem-access 1' command is executed.
+18:35:20 INFO  : Context for 'APU' is selected.
+18:35:20 INFO  : Sourcing of 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl' is done.
+18:35:20 INFO  : 'ps7_init' command is executed.
+18:35:20 INFO  : 'ps7_post_config' command is executed.
+18:35:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:24 INFO  : The application 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:35:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:35:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1
+fpga -file E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:35:24 INFO  : Memory regions updated for context APU
+18:35:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:24 INFO  : 'con' command is executed.
+18:35:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:35:24 INFO  : Launch script is exported to file 'E:\Code\4K-Upsampling-System-on-Zynq\vitis\.sdk\launch_scripts\single_application_debug\debugger_upsampling-default.tcl'
+18:35:53 INFO  : Disconnected from the channel tcfchan#4.
+18:35:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:35:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351A78781A' is selected.
+18:35:54 INFO  : 'jtag frequency' command is executed.
+18:35:54 INFO  : Context for 'APU' is selected.
+18:35:54 INFO  : System reset is completed.
+18:35:57 INFO  : 'after 3000' command is executed.
+18:35:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1' command is executed.
+18:36:00 INFO  : FPGA configured successfully with bitstream "E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit"
+18:36:00 INFO  : Context for 'APU' is selected.
+18:36:00 INFO  : Hardware design information is loaded from 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:36:00 INFO  : 'configparams force-mem-access 1' command is executed.
+18:36:00 INFO  : Context for 'APU' is selected.
+18:36:00 INFO  : Sourcing of 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl' is done.
+18:36:00 INFO  : 'ps7_init' command is executed.
+18:36:00 INFO  : 'ps7_post_config' command is executed.
+18:36:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:36:03 INFO  : The application 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:36:03 INFO  : 'configparams force-mem-access 0' command is executed.
+18:36:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1
+fpga -file E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:36:04 INFO  : Memory regions updated for context APU
+18:36:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:36:04 INFO  : 'con' command is executed.
+18:36:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:36:04 INFO  : Launch script is exported to file 'E:\Code\4K-Upsampling-System-on-Zynq\vitis\.sdk\launch_scripts\single_application_debug\debugger_upsampling-default.tcl'
+18:36:10 INFO  : Disconnected from the channel tcfchan#5.
+18:36:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:36:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351A78781A' is selected.
+18:36:12 INFO  : 'jtag frequency' command is executed.
+18:36:12 INFO  : Context for 'APU' is selected.
+18:36:12 INFO  : System reset is completed.
+18:36:15 INFO  : 'after 3000' command is executed.
+18:36:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1' command is executed.
+18:36:17 INFO  : FPGA configured successfully with bitstream "E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit"
+18:36:17 INFO  : Context for 'APU' is selected.
+18:36:17 INFO  : Hardware design information is loaded from 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:36:17 INFO  : 'configparams force-mem-access 1' command is executed.
+18:36:17 INFO  : Context for 'APU' is selected.
+18:36:17 INFO  : Sourcing of 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl' is done.
+18:36:17 INFO  : 'ps7_init' command is executed.
+18:36:18 INFO  : 'ps7_post_config' command is executed.
+18:36:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:36:21 INFO  : The application 'E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:36:21 INFO  : 'configparams force-mem-access 0' command is executed.
+18:36:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78781A" && level==0} -index 1
+fpga -file E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Code/4K-Upsampling-System-on-Zynq/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Code/4K-Upsampling-System-on-Zynq/vitis/upsampling/Debug/upsampling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:36:21 INFO  : Memory regions updated for context APU
+18:36:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:36:21 INFO  : 'con' command is executed.
+18:36:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:36:21 INFO  : Launch script is exported to file 'E:\Code\4K-Upsampling-System-on-Zynq\vitis\.sdk\launch_scripts\single_application_debug\debugger_upsampling-default.tcl'
+18:45:41 INFO  : Disconnected from the channel tcfchan#6.

@@ -1,0 +1,513 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Apr 30 19:46:42 2022
+# Process ID: 18160
+# Current directory: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/synth_1
+# Command line: vivado.exe -log Upsampling_Bayes.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Upsampling_Bayes.tcl
+# Log file: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/synth_1/Upsampling_Bayes.vds
+# Journal file: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Upsampling_Bayes.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top Upsampling_Bayes -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17684 
+WARNING: [Synth 8-2507] parameter declaration becomes local in Upsampling_Bayes_S00_AXIS with formal parameter declaration list [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v:56]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 696.086 ; gain = 244.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Upsampling_Bayes' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:4]
+	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Upsampling_Bayes_S00_AXIS' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v:4]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter NUMBER_OF_INPUT_WORDS bound to: 8 - type: integer 
+	Parameter bit_num bound to: 3 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE_FIFO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'Upsampling_Bayes_S00_AXIS' (1#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Upsampling_Bayes_M00_AXIS' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:4]
+	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+	Parameter NUMBER_OF_OUTPUT_WORDS bound to: 3 - type: integer 
+	Parameter WAIT_COUNT_BITS bound to: 5 - type: integer 
+	Parameter bit_num bound to: 2 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_COUNTER bound to: 2'b01 
+	Parameter SEND_STREAM bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:108]
+WARNING: [Synth 8-3848] Net fifo_wren in module/entity Upsampling_Bayes_M00_AXIS does not have driver. [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'Upsampling_Bayes_M00_AXIS' (2#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:4]
+WARNING: [Synth 8-689] width (96) of port connection 'M_AXIS_send_data' does not match port width (72) of module 'Upsampling_Bayes_M00_AXIS' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [Synth 8-6157] synthesizing module 'AXIS_to_pixel_buffer' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:1]
+	Parameter AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
+WARNING: [Synth 8-5788] Register pixel_out_reg_reg in module AXIS_to_pixel_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:28]
+WARNING: [Synth 8-5788] Register buffer_reg in module AXIS_to_pixel_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:40]
+WARNING: [Synth 8-5788] Register trans_eff_reg_reg in module AXIS_to_pixel_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'AXIS_to_pixel_buffer' (3#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Super_Res' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v:1]
+	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Super_Res' (4#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v:1]
+WARNING: [Synth 8-3848] Net S_AXIS_get_data in module/entity Upsampling_Bayes does not have driver. [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'Upsampling_Bayes' (5#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:4]
+WARNING: [Synth 8-3331] design Super_Res has unconnected port clk
+WARNING: [Synth 8-3331] design Super_Res has unconnected port rst_n
+WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
+WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[2]
+WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
+WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 743.488 ; gain = 291.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 743.488 ; gain = 291.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 743.488 ; gain = 291.672
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'Upsampling_Bayes_M00_AXIS'
+INFO: [Synth 8-802] inferred FSM for state register 'buffer_count_reg' in module 'AXIS_to_pixel_buffer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+            INIT_COUNTER |                               01 |                               01
+             SEND_STREAM |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'Upsampling_Bayes_M00_AXIS'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'buffer_count_reg' using encoding 'sequential' in module 'AXIS_to_pixel_buffer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 743.488 ; gain = 291.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               24 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Upsampling_Bayes_S00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module Upsampling_Bayes_M00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+Module AXIS_to_pixel_buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element Upsampling_Bayes_S00_AXIS_inst/stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-3917] design Upsampling_Bayes has port m00_axis_tstrb[3] driven by constant 1
+WARNING: [Synth 8-3917] design Upsampling_Bayes has port m00_axis_tstrb[2] driven by constant 1
+WARNING: [Synth 8-3917] design Upsampling_Bayes has port m00_axis_tstrb[1] driven by constant 1
+WARNING: [Synth 8-3917] design Upsampling_Bayes has port m00_axis_tstrb[0] driven by constant 1
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[31]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[30]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[29]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[28]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[27]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[26]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[25]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[24]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[23]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[22]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[21]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[20]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[19]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[18]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[17]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[16]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[15]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[14]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[13]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[12]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[11]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[10]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[9]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[8]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[7]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[6]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[5]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[4]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[3]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[2]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[1]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tdata[0]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design Upsampling_Bayes has unconnected port s00_axis_tstrb[0]
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[16]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[17]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[18]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[18]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[19]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[19]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[20]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[21]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[21]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[22]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[22]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXIS_to_pixel_buffer_0/buffer_reg[23] )
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[8]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[9]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[0]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[1]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[9]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[10]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[1]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[2]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[10]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[11]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[2]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[3]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[11]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[12]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[3]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[4]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[12]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[13]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[4]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[5]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[13]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[14]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[5]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[14]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[15]'
+INFO: [Synth 8-3886] merging instance 'AXIS_to_pixel_buffer_0/buffer_reg[6]' (FDE) to 'AXIS_to_pixel_buffer_0/buffer_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXIS_to_pixel_buffer_0/buffer_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXIS_to_pixel_buffer_0/buffer_reg[7] )
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][0]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[2][0]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][0]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][24]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][0]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[2][0]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][0]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][24]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][1]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[2][1]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][1]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][25]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][1]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[2][1]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][1]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][25]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][2]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[2][2]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][2]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][26]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][2]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[2][2]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][2]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][26]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][3]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[2][3]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][3]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][27]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][3]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[2][3]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][3]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][27]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][4]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[2][4]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][4]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][28]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][4]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[2][4]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][4]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][28]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][5]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][13]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[2][5]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][5]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][29]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][5]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][13]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[2][5]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][5]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][29]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][6]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][14]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[2][6]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][22]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][6]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][6]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][14]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[2][6]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][22]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][6]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][30]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][7]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[2][7]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][7]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][7]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][15]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[2][7]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][7]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][8]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][8]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][8]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][8]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][9]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][9]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][25]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][9]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][17]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][9]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][25]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][10]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][10]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][26]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][10]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][10]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][26]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][11]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][11]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][11]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][11]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][12]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][12]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][28]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][12]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][12]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][28]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][13]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][13]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][29]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][13]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][13]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][29]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][14]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][22]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][14]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][30]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][14]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][22]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][14]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][30]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][15]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[0][15]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[1][15]' (FDE) to 'Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1_reg[0][23]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (Upsampling_Bayes_M00_AXIS_inst/FSM_sequential_mst_exec_state_reg[1]) is unused and will be removed from module Upsampling_Bayes.
+WARNING: [Synth 8-3332] Sequential element (Upsampling_Bayes_M00_AXIS_inst/FSM_sequential_mst_exec_state_reg[0]) is unused and will be removed from module Upsampling_Bayes.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Upsampling_Bayes_M00_AXIS_inst/fifo_full_status_reg[1]/Q' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:268]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:268]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:268]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Upsampling_Bayes_M00_AXIS_inst/fifo_full_status_reg[0]/Q' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:268]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:268]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:268]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 941.230 ; gain = 489.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 945.074 ; gain = 493.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 945.234 ; gain = 493.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |LUT1 |     4|
+|3     |LUT2 |     2|
+|4     |LUT3 |     3|
+|5     |LUT4 |     5|
+|6     |LUT5 |     5|
+|7     |LUT6 |     2|
+|8     |FDCE |     2|
+|9     |FDRE |    10|
+|10    |IBUF |     6|
+|11    |OBUF |    39|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------+--------------------------+------+
+|      |Instance                         |Module                    |Cells |
++------+---------------------------------+--------------------------+------+
+|1     |top                              |                          |    80|
+|2     |  AXIS_to_pixel_buffer_0         |AXIS_to_pixel_buffer      |     3|
+|3     |  Upsampling_Bayes_S00_AXIS_inst |Upsampling_Bayes_S00_AXIS |    30|
++------+---------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 6 critical warnings and 56 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 945.234 ; gain = 493.418
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 958.152 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1060.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 56 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1060.574 ; gain = 615.723
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1060.574 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/synth_1/Upsampling_Bayes.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Upsampling_Bayes_utilization_synth.rpt -pb Upsampling_Bayes_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 30 19:47:04 2022...

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1649831137">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1651310732">
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="BITSTR-BMM" Name="design_1_wrapper_bd.bmm"/>
@@ -120,4 +120,6 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_3"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axis_data_fifo_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_system_ila_0_0"/>
 </GenRun>
