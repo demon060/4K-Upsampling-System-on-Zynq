@@ -84,17 +84,17 @@
 
 
 ##HDMI TX
-set_property -dict { PACKAGE_PIN E18   IOSTANDARD LVCMOS33 } [get_ports { hdmi_oen }]; #IO_L5P_T0_AD9P_35 Sch=hdmi_tx_hpd
-set_property -dict { PACKAGE_PIN G17   IOSTANDARD LVCMOS33 } [get_ports { hdmi_ddc_scl_io }]; #IO_L16P_T2_35 Sch=hdmi_tx_scl
-set_property -dict { PACKAGE_PIN G18   IOSTANDARD LVCMOS33 } [get_ports { hdmi_ddc_sda_io }]; #IO_L16N_T2_35 Sch=hdmi_tx_sda
-set_property -dict { PACKAGE_PIN H17   IOSTANDARD TMDS_33     } [get_ports { TMDS_clk_n }]; #IO_L13N_T2_MRCC_35 Sch=TMDS_data_clk_n
-set_property -dict { PACKAGE_PIN H16   IOSTANDARD TMDS_33     } [get_ports { TMDS_clk_p }]; #IO_L13P_T2_MRCC_35 Sch=TMDS_data_clk_p
-set_property -dict { PACKAGE_PIN D20   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_n[0] }]; #IO_L4N_T0_35 Sch=TMDS_data_n[0]
-set_property -dict { PACKAGE_PIN D19   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_p[0] }]; #IO_L4P_T0_35 Sch=TMDS_data_p[0]
-set_property -dict { PACKAGE_PIN B20   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_n[1] }]; #IO_L1N_T0_AD0N_35 Sch=TMDS_data_n[1]
-set_property -dict { PACKAGE_PIN C20   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_p[1] }]; #IO_L1P_T0_AD0P_35 Sch=TMDS_data_p[1]
-set_property -dict { PACKAGE_PIN A20   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_n[2] }]; #IO_L2N_T0_AD8N_35 Sch=TMDS_data_n[2]
-set_property -dict { PACKAGE_PIN B19   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_p[2] }]; #IO_L2P_T0_AD8P_35 Sch=TMDS_data_p[2]
+set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS33} [get_ports hdmi_oen]
+set_property -dict {PACKAGE_PIN G17 IOSTANDARD LVCMOS33} [get_ports hdmi_ddc_scl_io]
+set_property -dict {PACKAGE_PIN G18 IOSTANDARD LVCMOS33} [get_ports hdmi_ddc_sda_io]
+set_property -dict {PACKAGE_PIN H17 IOSTANDARD TMDS_33} [get_ports TMDS_clk_n]
+set_property -dict {PACKAGE_PIN H16 IOSTANDARD TMDS_33} [get_ports TMDS_clk_p]
+set_property -dict {PACKAGE_PIN D20 IOSTANDARD TMDS_33} [get_ports {TMDS_data_n[0]}]
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD TMDS_33} [get_ports {TMDS_data_p[0]}]
+set_property -dict {PACKAGE_PIN B20 IOSTANDARD TMDS_33} [get_ports {TMDS_data_n[1]}]
+set_property -dict {PACKAGE_PIN C20 IOSTANDARD TMDS_33} [get_ports {TMDS_data_p[1]}]
+set_property -dict {PACKAGE_PIN A20 IOSTANDARD TMDS_33} [get_ports {TMDS_data_n[2]}]
+set_property -dict {PACKAGE_PIN B19 IOSTANDARD TMDS_33} [get_ports {TMDS_data_p[2]}]
 
 ##HDMI TX CEC
 #set_property -dict { PACKAGE_PIN E19   IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_cec }]; #IO_L5N_T0_AD9N_35 Sch=hdmi_tx_cec
@@ -195,3 +195,49 @@ set_property -dict { PACKAGE_PIN B19   IOSTANDARD TMDS_33     } [get_ports { TMD
 #set_property PACKAGE_PIN W9 [get_ports {netic19_w9}]; #IO_L16N_T2_13
 #set_property PACKAGE_PIN Y9 [get_ports {netic19_y9}]; #IO_L14P_T2_SRCC_13
 
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list design_1_i/processing_system7_0/inst/FCLK_CLK0]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/Upsampling_Bayes_0/inst/pixel_low[0]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[1]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[2]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[3]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[4]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[5]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[6]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[7]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[8]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[9]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[10]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[11]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[12]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[13]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[14]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[15]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[16]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[17]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[18]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[19]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[20]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[21]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[22]} {design_1_i/Upsampling_Bayes_0/inst/pixel_low[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[0]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[1]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[2]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[3]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[4]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[5]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[6]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[7]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[8]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[9]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[10]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[11]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[12]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[13]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[14]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[15]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[16]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[17]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[18]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[19]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[20]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[21]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[22]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[23]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[24]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[25]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[26]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[27]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[28]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[29]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[30]} {design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data[31]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 96 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {design_1_i/Upsampling_Bayes_0/inst/pixel_high[0]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[1]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[2]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[3]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[4]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[5]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[6]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[7]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[8]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[9]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[10]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[11]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[12]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[13]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[14]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[15]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[16]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[17]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[18]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[19]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[20]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[21]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[22]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[23]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[24]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[25]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[26]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[27]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[28]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[29]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[30]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[31]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[32]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[33]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[34]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[35]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[36]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[37]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[38]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[39]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[40]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[41]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[42]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[43]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[44]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[45]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[46]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[47]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[48]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[49]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[50]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[51]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[52]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[53]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[54]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[55]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[56]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[57]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[58]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[59]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[60]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[61]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[62]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[63]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[64]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[65]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[66]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[67]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[68]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[69]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[70]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[71]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[72]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[73]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[74]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[75]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[76]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[77]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[78]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[79]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[80]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[81]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[82]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[83]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[84]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[85]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[86]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[87]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[88]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[89]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[90]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[91]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[92]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[93]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[94]} {design_1_i/Upsampling_Bayes_0/inst/pixel_high[95]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list design_1_i/Upsampling_Bayes_0/inst/axis_pixel_stuck]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list design_1_i/Upsampling_Bayes_0/inst/s_axis_empty]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list design_1_i/Upsampling_Bayes_0/inst/sr_busy]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list design_1_i/Upsampling_Bayes_0/inst/sr_pin_en]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list design_1_i/Upsampling_Bayes_0/inst/sr_pout_en]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets clk]

@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXIS_to_pixel_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_full, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb

@@ -248,7 +248,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7068c785</spirit:value>
+            <spirit:value>31b100e2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -264,7 +264,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7068c785</spirit:value>
+            <spirit:value>31b100e2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -279,6 +279,21 @@
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
             <spirit:value>3062321e</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>Upsampling_Bayes_tb</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>6ed4f30f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -540,7 +555,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M00_AXIS_START_COUNT</spirit:name>
         <spirit:displayName>C M00 Axis Start Count</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_START_COUNT">32</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_START_COUNT">16</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -573,7 +588,7 @@
       <spirit:file>
         <spirit:name>Upsampling_Bayes.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_288d2461</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_c7025e06</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -608,6 +623,21 @@
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>Upsampling_Bayes_tb.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ip_repo/upsampling/upsampling.sim/Upsampling_Bayes_tb_behav.wcfg</spirit:name>
+        <spirit:fileType>unknown</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
   </spirit:fileSets>
   <spirit:description>Upsampling_Bayes_v1_0</spirit:description>
   <spirit:parameters>
@@ -629,7 +659,7 @@
     <spirit:parameter>
       <spirit:name>C_M00_AXIS_START_COUNT</spirit:name>
       <spirit:displayName>C M00 Axis Start Count</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_START_COUNT">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_START_COUNT">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -665,23 +695,131 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Upsampling_Bayes_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-04-30T11:45:58Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>11</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-05-01T14:01:35Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@16c7bec5_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1b1fd5ac_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@79e32092_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@f8b5244_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6aa1d2d6_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38c06911_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@267deea1_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@231f46c8_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6103b3e2_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52612072_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8db5e36_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56be969b_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ddeeb5f_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4829558b_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2db9172b_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aaa33a5_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45956177_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fa9df2c_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fa480ad_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@184a602a_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59860c48_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@579c8fbe_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27b9fc92_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30bb5c85_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5affd516_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6df3f578_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@271a1228_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@581c7daa_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aeb9ad8_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3b8af7_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d7d447a_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76eaa406_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@799922f0_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dce8667_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cd5eeff_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62542234_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48e56139_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fe3171e_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72fb2dbe_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40523043_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24654ee8_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f771d88_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aeaf415_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32bb7f04_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@473b4fe3_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@393fb4fa_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3b996b_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@212f2eb1_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17616f92_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eac39ac_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a778837_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee1dff2_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52c6b3c7_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de3a06_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7941f39f_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37564561_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76de933e_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bd8f7da_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20fc5cd3_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@481c165e_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ba02def_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74889020_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b0bf3ab_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e6be752_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@434d1ba6_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16f8e575_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ca4ceb6_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@345b9524_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5865a43a_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15543ba1_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dd22c52_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bb3a9bc_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fe81e14_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46ebbb9d_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6500f77f_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13b464c3_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@454699a2_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f8c97cc_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4729efe3_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f7b3ed6_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ef021c_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c83a809_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@405a0b97_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66432ae4_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@492247e5_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dbad01b_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@511cde68_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e5f95f1_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f8a5eed_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f466727_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27a61d2_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@112e3e09_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68c4811c_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bfea67c_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b5e61f1_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fa3f61e_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79235d2e_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36cde65b_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47b7d6bf_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29cac4c1_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bc5dbe1_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63514008_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65790efa_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fc8d1ae_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42deee3d_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30e3b8f6_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a3095b6_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42488bd7_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42ba5469_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52c718b3_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73322910_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f437df6_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aa2e223_ARCHIVE_LOCATION">e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="108ecdd5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2a825feb"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="991343d8"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="a94db45d"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="c04074b2"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="94ccbf4d"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="532ed9db"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="2467a985"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

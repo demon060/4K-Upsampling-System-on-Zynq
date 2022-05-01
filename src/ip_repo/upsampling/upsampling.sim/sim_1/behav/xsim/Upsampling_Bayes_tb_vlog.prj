@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../verilog/upsampling/AXIS_to_pixel_buffer.v" \
+"../../../../../../verilog/upsampling/Super_Res.v" \
+"../../../../../../verilog/upsampling/Upsampling_Bayes.v" \
+"../../../../../../verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" \
+"../../../../../../verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" \
+"../../../../../../verilog/upsampling/Upsampling_Bayes_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

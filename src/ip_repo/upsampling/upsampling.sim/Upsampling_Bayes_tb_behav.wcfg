@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Upsampling_Bayes_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Upsampling_Bayes_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2195380fs"></ZoomStartTime>
+      <ZoomEndTime time="3433381fs"></ZoomEndTime>
+      <Cursor1Time time="2863380fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="231"></NameColumnWidth>
+      <ValueColumnWidth column_width="181"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="63" />
+   <wvobject fp_name="/Upsampling_Bayes_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/s00_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/s00_axis_tready" type="logic">
+      <obj_property name="ElementShortName">s00_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">s00_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/s00_axis_tdata" type="array">
+      <obj_property name="ElementShortName">s00_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axis_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/s00_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">s00_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">s00_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/S_AXIS_get_data" type="array">
+      <obj_property name="ElementShortName">S_AXIS_get_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_get_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/fifo_empty_flag" type="logic">
+      <obj_property name="ElementShortName">fifo_empty_flag</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/S_AXIS_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/S_AXIS_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/S_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/S_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/S_AXIS_TSTRB" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/S_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/S_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/axis_tready" type="logic">
+      <obj_property name="ElementShortName">axis_tready</obj_property>
+      <obj_property name="ObjectShortName">axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/mst_exec_state" type="logic">
+      <obj_property name="ElementShortName">mst_exec_state</obj_property>
+      <obj_property name="ObjectShortName">mst_exec_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/fifo_full_flag" type="logic">
+      <obj_property name="ElementShortName">fifo_full_flag</obj_property>
+      <obj_property name="ObjectShortName">fifo_full_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/fifo_rden" type="logic">
+      <obj_property name="ElementShortName">fifo_rden</obj_property>
+      <obj_property name="ObjectShortName">fifo_rden</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/fifo_wren" type="logic">
+      <obj_property name="ElementShortName">fifo_wren</obj_property>
+      <obj_property name="ObjectShortName">fifo_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/write_pointer" type="array">
+      <obj_property name="ElementShortName">write_pointer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">write_pointer[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/read_pointer" type="array">
+      <obj_property name="ElementShortName">read_pointer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">read_pointer[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/writes_done" type="logic">
+      <obj_property name="ElementShortName">writes_done</obj_property>
+      <obj_property name="ObjectShortName">writes_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_S00_AXIS_inst/stream_data_fifo" type="array">
+      <obj_property name="ElementShortName">stream_data_fifo[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">stream_data_fifo[0:7][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/pixel_out" type="array">
+      <obj_property name="ElementShortName">pixel_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_out[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/trans_eff" type="logic">
+      <obj_property name="ElementShortName">trans_eff</obj_property>
+      <obj_property name="ObjectShortName">trans_eff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/buf_rden" type="logic">
+      <obj_property name="ElementShortName">buf_rden</obj_property>
+      <obj_property name="ObjectShortName">buf_rden</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/buf_wren" type="logic">
+      <obj_property name="ElementShortName">buf_wren</obj_property>
+      <obj_property name="ObjectShortName">buf_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/stuck" type="logic">
+      <obj_property name="ElementShortName">stuck</obj_property>
+      <obj_property name="ObjectShortName">stuck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/buffer" type="array">
+      <obj_property name="ElementShortName">buffer[23:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/buffer_count" type="array">
+      <obj_property name="ElementShortName">buffer_count[1:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_count[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/pixel_out_reg" type="array">
+      <obj_property name="ElementShortName">pixel_out_reg[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_out_reg[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/trans_eff_reg" type="logic">
+      <obj_property name="ElementShortName">trans_eff_reg</obj_property>
+      <obj_property name="ObjectShortName">trans_eff_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/pixel_in" type="array">
+      <obj_property name="ElementShortName">pixel_in[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/pin_en" type="logic">
+      <obj_property name="ElementShortName">pin_en</obj_property>
+      <obj_property name="ObjectShortName">pin_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/pout_en" type="logic">
+      <obj_property name="ElementShortName">pout_en</obj_property>
+      <obj_property name="ObjectShortName">pout_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/stuck" type="logic">
+      <obj_property name="ElementShortName">stuck</obj_property>
+      <obj_property name="ObjectShortName">stuck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/pixel_out" type="array">
+      <obj_property name="ElementShortName">pixel_out[95:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_out[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/M_AXIS_send_data" type="array">
+      <obj_property name="ElementShortName">M_AXIS_send_data[95:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_send_data[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/fifo_wren" type="logic">
+      <obj_property name="ElementShortName">fifo_wren</obj_property>
+      <obj_property name="ObjectShortName">fifo_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/fifo_full" type="logic">
+      <obj_property name="ElementShortName">fifo_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/M_AXIS_ACLK" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/M_AXIS_ARESETN" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/M_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/M_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">M_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/M_AXIS_TSTRB" type="array">
+      <obj_property name="ElementShortName">M_AXIS_TSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/M_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/M_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/mst_exec_state" type="array">
+      <obj_property name="ElementShortName">mst_exec_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mst_exec_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/read_pointer" type="array">
+      <obj_property name="ElementShortName">read_pointer[1:0]</obj_property>
+      <obj_property name="ObjectShortName">read_pointer[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/count" type="array">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/tx_en" type="logic">
+      <obj_property name="ElementShortName">tx_en</obj_property>
+      <obj_property name="ObjectShortName">tx_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/tx_done" type="logic">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/fifo_write_selector" type="logic">
+      <obj_property name="ElementShortName">fifo_write_selector</obj_property>
+      <obj_property name="ObjectShortName">fifo_write_selector</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0" type="array">
+      <obj_property name="ElementShortName">stream_data_fifo_0[0:2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">stream_data_fifo_0[0:2][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1" type="array">
+      <obj_property name="ElementShortName">stream_data_fifo_1[0:2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">stream_data_fifo_1[0:2][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/fifo_full_status" type="array">
+      <obj_property name="ElementShortName">fifo_full_status[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_full_status[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

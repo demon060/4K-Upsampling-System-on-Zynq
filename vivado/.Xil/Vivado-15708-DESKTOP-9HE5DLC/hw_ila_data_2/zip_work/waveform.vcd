@@ -1,0 +1,39 @@
+$date
+        2022-May-01 17:43:37
+$end
+$version
+        Vivado v2019.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 24 " design_1_i/Upsampling_Bayes_0/inst/pixel_low [23:0] $end
+$var reg 32 : design_1_i/Upsampling_Bayes_0/inst/s_axis_get_data [31:0] $end
+$var reg 96 Z design_1_i/Upsampling_Bayes_0/inst/pixel_high [95:0] $end
+$var reg 1 \" design_1_i/Upsampling_Bayes_0/inst/axis_pixel_stuck $end
+$var reg 1 ]" design_1_i/Upsampling_Bayes_0/inst/s_axis_empty $end
+$var reg 1 ^" design_1_i/Upsampling_Bayes_0/inst/sr_busy $end
+$var reg 1 _" design_1_i/Upsampling_Bayes_0/inst/sr_pin_en $end
+$var reg 1 `" design_1_i/Upsampling_Bayes_0/inst/sr_pout_en $end
+$var reg 1 a" _TRIGGER $end
+$var reg 1 b" _WINDOW $end
+$var reg 1 c" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10010000110110001010000 "
+b1101101010100000100001101101100 :
+b10010000110110001010000010010000110110001010000010010000110110001010000010010000110110001010000 Z
+0\"
+1]"
+0^"
+0_"
+0`"
+0a"
+1b"
+0c"
+$end
+#512
+1a"

@@ -1,0 +1,51 @@
+$date
+        2022-May-01 17:53:10
+$end
+$version
+        Vivado v2019.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " design_1_i/system_ila_0/inst/net_slot_0_axis_tdata [31:0] $end
+$var reg 4 B design_1_i/system_ila_0/inst/net_slot_0_axis_tkeep [3:0] $end
+$var reg 1 F design_1_i/system_ila_0/inst/net_slot_0_axis_tvalid $end
+$var reg 1 G design_1_i/system_ila_0/inst/net_slot_0_axis_tready $end
+$var reg 1 H design_1_i/system_ila_0/inst/net_slot_0_axis_tlast $end
+$var reg 32 I design_1_i/system_ila_0/inst/net_slot_1_axis_tdata [31:0] $end
+$var reg 4 i design_1_i/system_ila_0/inst/net_slot_1_axis_tstrb [3:0] $end
+$var reg 1 m design_1_i/system_ila_0/inst/net_slot_1_axis_tvalid $end
+$var reg 1 n design_1_i/system_ila_0/inst/net_slot_1_axis_tready $end
+$var reg 1 o design_1_i/system_ila_0/inst/net_slot_1_axis_tlast $end
+$var reg 3 p Interface__i1_s0___axis_data_fifo_0_M_AXIS_ [2:0] $end
+$var reg 3 s Interface__i1_s1___Upsampling_Bayes_0_m00_axis1_ [2:0] $end
+$var reg 3 v T_Channel__i1_s0___axis_data_fifo_0_M_AXIS_ [2:0] $end
+$var reg 3 y T_Channel__i1_s1___Upsampling_Bayes_0_m00_axis1_ [2:0] $end
+$var reg 1 | _TRIGGER $end
+$var reg 1 } _WINDOW $end
+$var reg 1 ~ _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001000011011000101000001000111 "
+b1111 B
+0F
+0G
+0H
+b0 I
+b1111 i
+0m
+1n
+0o
+b11 p
+b11 s
+b11 v
+b11 y
+0|
+1}
+0~
+$end
+#512
+1|
