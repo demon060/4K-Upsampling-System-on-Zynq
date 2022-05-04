@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2195380fs"></ZoomStartTime>
-      <ZoomEndTime time="3433381fs"></ZoomEndTime>
-      <Cursor1Time time="2863380fs"></Cursor1Time>
+      <ZoomStartTime time="320862678fs"></ZoomStartTime>
+      <ZoomEndTime time="322280463fs"></ZoomEndTime>
+      <Cursor1Time time="638600000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="231"></NameColumnWidth>
-      <ValueColumnWidth column_width="181"></ValueColumnWidth>
+      <ValueColumnWidth column_width="177"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="63" />
+   <WVObjectSize size="64" />
    <wvobject fp_name="/Upsampling_Bayes_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -248,6 +248,11 @@
    <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/count" type="array">
       <obj_property name="ElementShortName">count[3:0]</obj_property>
       <obj_property name="ObjectShortName">count[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/row_count" type="array">
+      <obj_property name="ElementShortName">row_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">row_count[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/tx_en" type="logic">

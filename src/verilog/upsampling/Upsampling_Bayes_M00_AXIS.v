@@ -5,6 +5,7 @@ module Upsampling_Bayes_M00_AXIS #
        (
            // Users to add parameters here
            parameter PIXEL_WIDTH = 24,
+           parameter ROW_PIXEL_COUNT = 800,
            // User parameters ends
            // Do not modify the parameters beyond this line
 
@@ -51,8 +52,10 @@ endfunction
 // WAIT_COUNT_BITS is the width of the wait counter.
 localparam integer WAIT_COUNT_BITS = clogb2(C_M_START_COUNT-1);
 
+localparam integer ROW_PIXEL_COUNT_BITS = clogb2(ROW_PIXEL_COUNT-1);
+
 // bit_num gives the minimum number of bits needed to address 'depth' size of FIFO.
-localparam bit_num  = clogb2(NUMBER_OF_OUTPUT_WORDS);
+localparam bit_num  = clogb2(NUMBER_OF_OUTPUT_WORDS-1);
 
 // Define the states of state machine
 // The control state machine oversees the writing of input streaming data to the FIFO,
@@ -85,6 +88,8 @@ reg [C_M_AXIS_TDATA_WIDTH-1 : 0] 	stream_data_out;
 wire  	tx_en;
 //The master has issued all the streaming data stored in FIFO
 reg  	tx_done;
+//行像素计数器，用于每行传输完拉高last
+reg     [ROW_PIXEL_COUNT_BITS-1:0] row_count;
 
 
 // I/O Connections assignments
@@ -156,7 +161,7 @@ end
 // AXI tlast generation
 // axis_tlast is asserted number of output streaming data is NUMBER_OF_OUTPUT_WORDS-1
 // (0 to NUMBER_OF_OUTPUT_WORDS-1)
-assign axis_tlast = (read_pointer == NUMBER_OF_OUTPUT_WORDS-1);
+assign axis_tlast = (read_pointer == NUMBER_OF_OUTPUT_WORDS-1) && (row_count == ROW_PIXEL_COUNT - 1);
 
 
 // Delay the axis_tvalid and axis_tlast signal by one clock cycle
@@ -183,7 +188,7 @@ begin
     if(!M_AXIS_ARESETN)
     begin
         read_pointer <= 0;
-        tx_done <= 1'b0;
+        // tx_done <= 1'b0;
     end
     else
         if (read_pointer <= NUMBER_OF_OUTPUT_WORDS-1)
@@ -193,7 +198,7 @@ begin
                 // when FIFO read signal is enabled.
             begin
                 read_pointer <= read_pointer + 1;
-                tx_done <= 1'b0;
+                // tx_done <= 1'b0;
             end
         end
         else if (read_pointer == NUMBER_OF_OUTPUT_WORDS)
@@ -201,10 +206,40 @@ begin
             // tx_done is asserted when NUMBER_OF_OUTPUT_WORDS numbers of streaming data
             // has been out.
             read_pointer <= 0;// 客制化逻辑
-            tx_done <= 1'b1;
+            // tx_done <= 1'b1;
         end
 end
 
+// row_counter
+always@(posedge M_AXIS_ACLK)
+begin
+    if(!M_AXIS_ARESETN)
+    begin
+        row_count <= 0;
+    end else begin
+        if (read_pointer == NUMBER_OF_OUTPUT_WORDS) begin
+            if(row_count < ROW_PIXEL_COUNT - 1) begin
+                row_count <= row_count + 1;
+            end else begin
+                row_count <= 0;
+            end
+        end
+    end
+end
+
+// tx_done
+always @(posedge M_AXIS_ACLK) begin
+    if(!M_AXIS_ARESETN)
+    begin
+        tx_done <= 0;
+    end else begin
+        if (read_pointer == NUMBER_OF_OUTPUT_WORDS && row_count == ROW_PIXEL_COUNT - 1) begin
+            tx_done <= 1;
+        end else begin
+            tx_done <= 0;
+        end
+    end
+end
 
 //FIFO read enable generation
 reg fifo_write_selector;

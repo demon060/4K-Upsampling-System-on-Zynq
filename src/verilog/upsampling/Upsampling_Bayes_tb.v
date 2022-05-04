@@ -37,7 +37,7 @@ initial begin
             s00_axis_tlast = 0;
     #300    s00_axis_tvalid = 1;
             s00_axis_tdata = 32'h33221100;
-    while (i != 12) begin
+    while (i != 600) begin
     #100;
         if (s00_axis_tready) begin
             s00_axis_tdata = s00_axis_tdata + 32'h11111111;
@@ -48,9 +48,25 @@ initial begin
             s00_axis_tlast = 1;
     #100    s00_axis_tlast = 0;
             s00_axis_tvalid = 0;
-    while (m00_axis_tdata == 32'hffeeddff) begin 
+    // while (m00_axis_tdata == 32'hffeeddff) begin 
+    // end
+    i=0;
+    #2000   s00_axis_tlast = 0;
+    #300    s00_axis_tvalid = 1;
+            s00_axis_tdata = 32'h33221100;
+    while (i != 600) begin
+    #100;
+        if (s00_axis_tready) begin
+            s00_axis_tdata = s00_axis_tdata + 32'h11111111;
+            i = i + 1;
+        end
     end
-    // $stop;       
+            s00_axis_tdata = s00_axis_tdata + 32'h11111111;
+            s00_axis_tlast = 1;
+    #100    s00_axis_tlast = 0;
+            s00_axis_tvalid = 0;
+    #2000;
+    $stop;       
 end
     // #100    s00_axis_tdata = 32'h77665544;
     // #100    s00_axis_tdata = 32'hbbaa9988;
