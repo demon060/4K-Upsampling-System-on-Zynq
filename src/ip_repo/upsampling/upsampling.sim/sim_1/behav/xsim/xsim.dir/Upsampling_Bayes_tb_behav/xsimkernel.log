@@ -1,0 +1,4 @@
+Running: xsim.dir/Upsampling_Bayes_tb_behav/xsimk.exe -simmode gui -wdb Upsampling_Bayes_tb_behav.wdb -simrunnum 0 -socket 61137
+Design successfully loaded
+Design Loading Memory Usage: 6276 KB (Peak: 6276 KB)
+Design Loading CPU Usage: 15 ms
