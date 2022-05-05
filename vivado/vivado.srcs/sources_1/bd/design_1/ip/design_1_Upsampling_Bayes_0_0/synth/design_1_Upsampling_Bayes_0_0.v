@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:Upsampling_Bayes:1.0
-// IP Revision: 11
+// IP Revision: 12
 
 (* X_CORE_INFO = "Upsampling_Bayes,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_Upsampling_Bayes_0_0,Upsampling_Bayes,{}" *)
-(* CORE_GENERATION_INFO = "design_1_Upsampling_Bayes_0_0,Upsampling_Bayes,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Upsampling_Bayes,x_ipVersion=1.0,x_ipCoreRevision=11,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,PIXEL_WIDTH=24,C_S00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_START_COUNT=32}" *)
+(* CORE_GENERATION_INFO = "design_1_Upsampling_Bayes_0_0,Upsampling_Bayes,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Upsampling_Bayes,x_ipVersion=1.0,x_ipCoreRevision=12,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,PIXEL_WIDTH=24,C_S00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_START_COUNT=32}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_Upsampling_Bayes_0_0 (

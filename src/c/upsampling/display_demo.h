@@ -44,13 +44,13 @@
 #define DEMO_MAX_FRAME (800*600*BYTES_PIXEL)
 #define DEMO_STRIDE (800 * BYTES_PIXEL)
 
+
 /* ------------------------------------------------------------ */
 /*					Procedure Declarations						*/
 /* ------------------------------------------------------------ */
 
 void DemoInitialize();
-void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern);
-
+void pic_transfer(u8 *output_pic, u8* input_pic, u32 width, u32 height, u32 stride, u32 position);
 /* ------------------------------------------------------------ */
 
 /************************************************************************/

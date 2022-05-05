@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May  1 22:04:36 2022" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May  4 16:34:54 2022" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="bd_378d" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -30,14 +30,14 @@
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axis_tlast"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef" SIGNAME="g_inst_slot_0_axis_tvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="g_inst" PORT="slot_0_axis_tvalid"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="SLOT_0_AXIS_tready" SIGIS="undef" SIGNAME="g_inst_slot_0_axis_tready">
       <CONNECTIONS>
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axis_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef" SIGNAME="g_inst_slot_0_axis_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="g_inst" PORT="slot_0_axis_tvalid"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="31" NAME="SLOT_1_AXIS_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_1_axis_tdata">
@@ -45,19 +45,9 @@
         <CONNECTION INSTANCE="g_inst" PORT="slot_1_axis_tdata"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="3" NAME="SLOT_1_AXIS_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_1_axis_tstrb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="g_inst" PORT="slot_1_axis_tstrb"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="SLOT_1_AXIS_tlast" SIGIS="undef" SIGNAME="g_inst_slot_1_axis_tlast">
       <CONNECTIONS>
         <CONNECTION INSTANCE="g_inst" PORT="slot_1_axis_tlast"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="SLOT_1_AXIS_tvalid" SIGIS="undef" SIGNAME="g_inst_slot_1_axis_tvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="g_inst" PORT="slot_1_axis_tvalid"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="SLOT_1_AXIS_tready" SIGIS="undef" SIGNAME="g_inst_slot_1_axis_tready">
@@ -65,14 +55,19 @@
         <CONNECTION INSTANCE="g_inst" PORT="slot_1_axis_tready"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" LEFT="3" NAME="SLOT_1_AXIS_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_1_axis_tstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="g_inst" PORT="slot_1_axis_tstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SLOT_1_AXIS_tvalid" SIGIS="undef" SIGNAME="g_inst_slot_1_axis_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="g_inst" PORT="slot_1_axis_tvalid"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="I" LEFT="31" NAME="SLOT_2_AXIS_tdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_2_axis_tdata">
       <CONNECTIONS>
         <CONNECTION INSTANCE="g_inst" PORT="slot_2_axis_tdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="SLOT_2_AXIS_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_2_axis_tstrb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="g_inst" PORT="slot_2_axis_tstrb"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="SLOT_2_AXIS_tlast" SIGIS="undef" SIGNAME="g_inst_slot_2_axis_tlast">
@@ -80,14 +75,19 @@
         <CONNECTION INSTANCE="g_inst" PORT="slot_2_axis_tlast"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="SLOT_2_AXIS_tvalid" SIGIS="undef" SIGNAME="g_inst_slot_2_axis_tvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="g_inst" PORT="slot_2_axis_tvalid"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="SLOT_2_AXIS_tready" SIGIS="undef" SIGNAME="g_inst_slot_2_axis_tready">
       <CONNECTIONS>
         <CONNECTION INSTANCE="g_inst" PORT="slot_2_axis_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="SLOT_2_AXIS_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_2_axis_tstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="g_inst" PORT="slot_2_axis_tstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SLOT_2_AXIS_tvalid" SIGIS="undef" SIGNAME="g_inst_slot_2_axis_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="g_inst" PORT="slot_2_axis_tvalid"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -111,8 +111,8 @@
         <PORTMAP LOGICAL="TDATA" PHYSICAL="SLOT_0_AXIS_tdata"/>
         <PORTMAP LOGICAL="TKEEP" PHYSICAL="SLOT_0_AXIS_tkeep"/>
         <PORTMAP LOGICAL="TLAST" PHYSICAL="SLOT_0_AXIS_tlast"/>
-        <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_0_AXIS_tvalid"/>
         <PORTMAP LOGICAL="TREADY" PHYSICAL="SLOT_0_AXIS_tready"/>
+        <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_0_AXIS_tvalid"/>
       </PORTMAPS>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="g_inst_slot_1_axis" NAME="SLOT_1_AXIS" TYPE="TARGET">
@@ -131,10 +131,10 @@
       <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
       <PORTMAPS>
         <PORTMAP LOGICAL="TDATA" PHYSICAL="SLOT_1_AXIS_tdata"/>
-        <PORTMAP LOGICAL="TSTRB" PHYSICAL="SLOT_1_AXIS_tstrb"/>
         <PORTMAP LOGICAL="TLAST" PHYSICAL="SLOT_1_AXIS_tlast"/>
-        <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_1_AXIS_tvalid"/>
         <PORTMAP LOGICAL="TREADY" PHYSICAL="SLOT_1_AXIS_tready"/>
+        <PORTMAP LOGICAL="TSTRB" PHYSICAL="SLOT_1_AXIS_tstrb"/>
+        <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_1_AXIS_tvalid"/>
       </PORTMAPS>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="g_inst_slot_2_axis" NAME="SLOT_2_AXIS" TYPE="TARGET">
@@ -153,10 +153,10 @@
       <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
       <PORTMAPS>
         <PORTMAP LOGICAL="TDATA" PHYSICAL="SLOT_2_AXIS_tdata"/>
-        <PORTMAP LOGICAL="TSTRB" PHYSICAL="SLOT_2_AXIS_tstrb"/>
         <PORTMAP LOGICAL="TLAST" PHYSICAL="SLOT_2_AXIS_tlast"/>
-        <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_2_AXIS_tvalid"/>
         <PORTMAP LOGICAL="TREADY" PHYSICAL="SLOT_2_AXIS_tready"/>
+        <PORTMAP LOGICAL="TSTRB" PHYSICAL="SLOT_2_AXIS_tstrb"/>
+        <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_2_AXIS_tvalid"/>
       </PORTMAPS>
     </BUSINTERFACE>
   </EXTERNALINTERFACES>
@@ -1829,7 +1829,7 @@
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
         <PARAMETER NAME="C_ENABLE_ILA_AXI_MON" VALUE="0"/>
         <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="15"/>
-        <PARAMETER NAME="C_DATA_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="C_DATA_DEPTH" VALUE="8192"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2019"/>
         <PARAMETER NAME="C_MINOR_VERSION" VALUE="2"/>
         <PARAMETER NAME="C_BUILD_REVISION" VALUE="0"/>

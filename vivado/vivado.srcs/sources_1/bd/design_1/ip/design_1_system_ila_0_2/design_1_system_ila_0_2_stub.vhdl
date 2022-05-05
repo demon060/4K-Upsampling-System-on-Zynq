@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun May  1 20:05:23 2022
--- Host        : DESKTOP-9HE5DLC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_system_ila_0_2 -prefix
---               design_1_system_ila_0_2_ design_1_system_ila_0_2_stub.vhdl
+-- Date        : Wed May  4 16:40:23 2022
+-- Host        : DESKTOP-CKC5QTJ running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_2/design_1_system_ila_0_2_stub.vhdl
 -- Design      : design_1_system_ila_0_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

@@ -1,15 +1,15 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Sun May  1 22:04:32 2022
-//Host        : DESKTOP-9HE5DLC running 64-bit major release  (build 9200)
+//Date        : Wed May  4 16:34:49 2022
+//Host        : DESKTOP-CKC5QTJ running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=21,numNonXlnxBlks=2,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=24,da_clkrst_cnt=26,da_ps7_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=33,numReposBlks=22,numNonXlnxBlks=2,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=24,da_clkrst_cnt=26,da_ps7_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -115,44 +115,44 @@ module design_1
   wire axi_dynclk_0_LOCKED_O;
   wire axi_dynclk_0_PXL_CLK_5X_O;
   wire axi_dynclk_0_PXL_CLK_O;
-  wire [31:0]axi_mem_intercon_M00_AXI_ARADDR;
-  wire [1:0]axi_mem_intercon_M00_AXI_ARBURST;
-  wire [3:0]axi_mem_intercon_M00_AXI_ARCACHE;
-  wire [1:0]axi_mem_intercon_M00_AXI_ARID;
-  wire [3:0]axi_mem_intercon_M00_AXI_ARLEN;
-  wire [1:0]axi_mem_intercon_M00_AXI_ARLOCK;
-  wire [2:0]axi_mem_intercon_M00_AXI_ARPROT;
-  wire [3:0]axi_mem_intercon_M00_AXI_ARQOS;
-  wire axi_mem_intercon_M00_AXI_ARREADY;
-  wire [2:0]axi_mem_intercon_M00_AXI_ARSIZE;
-  wire axi_mem_intercon_M00_AXI_ARVALID;
-  wire [31:0]axi_mem_intercon_M00_AXI_AWADDR;
-  wire [1:0]axi_mem_intercon_M00_AXI_AWBURST;
-  wire [3:0]axi_mem_intercon_M00_AXI_AWCACHE;
-  wire [1:0]axi_mem_intercon_M00_AXI_AWID;
-  wire [3:0]axi_mem_intercon_M00_AXI_AWLEN;
-  wire [1:0]axi_mem_intercon_M00_AXI_AWLOCK;
-  wire [2:0]axi_mem_intercon_M00_AXI_AWPROT;
-  wire [3:0]axi_mem_intercon_M00_AXI_AWQOS;
-  wire axi_mem_intercon_M00_AXI_AWREADY;
-  wire [2:0]axi_mem_intercon_M00_AXI_AWSIZE;
-  wire axi_mem_intercon_M00_AXI_AWVALID;
-  wire [5:0]axi_mem_intercon_M00_AXI_BID;
-  wire axi_mem_intercon_M00_AXI_BREADY;
-  wire [1:0]axi_mem_intercon_M00_AXI_BRESP;
-  wire axi_mem_intercon_M00_AXI_BVALID;
-  wire [63:0]axi_mem_intercon_M00_AXI_RDATA;
-  wire [5:0]axi_mem_intercon_M00_AXI_RID;
-  wire axi_mem_intercon_M00_AXI_RLAST;
-  wire axi_mem_intercon_M00_AXI_RREADY;
-  wire [1:0]axi_mem_intercon_M00_AXI_RRESP;
-  wire axi_mem_intercon_M00_AXI_RVALID;
-  wire [63:0]axi_mem_intercon_M00_AXI_WDATA;
-  wire [1:0]axi_mem_intercon_M00_AXI_WID;
-  wire axi_mem_intercon_M00_AXI_WLAST;
-  wire axi_mem_intercon_M00_AXI_WREADY;
-  wire [7:0]axi_mem_intercon_M00_AXI_WSTRB;
-  wire axi_mem_intercon_M00_AXI_WVALID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 ARADDR" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]axi_mem_intercon_M00_AXI_ARADDR;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_ARBURST;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 ARCACHE" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]axi_mem_intercon_M00_AXI_ARCACHE;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 ARID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_ARID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 ARLEN" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]axi_mem_intercon_M00_AXI_ARLEN;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_ARLOCK;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 ARPROT" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]axi_mem_intercon_M00_AXI_ARPROT;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]axi_mem_intercon_M00_AXI_ARQOS;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 ARREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_ARREADY;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 ARSIZE" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]axi_mem_intercon_M00_AXI_ARSIZE;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 ARVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_ARVALID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 AWADDR" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]axi_mem_intercon_M00_AXI_AWADDR;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_AWBURST;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 AWCACHE" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]axi_mem_intercon_M00_AXI_AWCACHE;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 AWID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_AWID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 AWLEN" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]axi_mem_intercon_M00_AXI_AWLEN;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_AWLOCK;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 AWPROT" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]axi_mem_intercon_M00_AXI_AWPROT;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]axi_mem_intercon_M00_AXI_AWQOS;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 AWREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_AWREADY;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 AWSIZE" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]axi_mem_intercon_M00_AXI_AWSIZE;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 AWVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_AWVALID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 BID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [5:0]axi_mem_intercon_M00_AXI_BID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 BREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_BREADY;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 BRESP" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_BRESP;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 BVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_BVALID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 RDATA" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [63:0]axi_mem_intercon_M00_AXI_RDATA;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 RID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [5:0]axi_mem_intercon_M00_AXI_RID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 RLAST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_RLAST;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 RREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_RREADY;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 RRESP" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_RRESP;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 RVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_RVALID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 WDATA" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [63:0]axi_mem_intercon_M00_AXI_WDATA;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 WID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_mem_intercon_M00_AXI_WID;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 WLAST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_WLAST;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 WREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_WREADY;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 WSTRB" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]axi_mem_intercon_M00_AXI_WSTRB;
+  (* CONN_BUS_INFO = "axi_mem_intercon_M00_AXI xilinx.com:interface:aximm:1.0 AXI3 WVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_mem_intercon_M00_AXI_WVALID;
   wire [23:0]axi_vdma_1_M_AXIS_MM2S_TDATA;
   wire axi_vdma_1_M_AXIS_MM2S_TLAST;
   wire axi_vdma_1_M_AXIS_MM2S_TREADY;
@@ -875,6 +875,41 @@ module design_1
         .SLOT_2_AXIS_tvalid(Upsampling_Bayes_0_m00_axis1_TVALID),
         .clk(processing_system7_0_FCLK_CLK3),
         .resetn(rst_ps7_0_100M_peripheral_aresetn));
+  design_1_system_ila_1_2 system_ila_1
+       (.SLOT_0_AXI_araddr(axi_mem_intercon_M00_AXI_ARADDR),
+        .SLOT_0_AXI_arcache(axi_mem_intercon_M00_AXI_ARCACHE),
+        .SLOT_0_AXI_arid(axi_mem_intercon_M00_AXI_ARID),
+        .SLOT_0_AXI_arlen(axi_mem_intercon_M00_AXI_ARLEN),
+        .SLOT_0_AXI_arprot(axi_mem_intercon_M00_AXI_ARPROT),
+        .SLOT_0_AXI_arready(axi_mem_intercon_M00_AXI_ARREADY),
+        .SLOT_0_AXI_arsize(axi_mem_intercon_M00_AXI_ARSIZE),
+        .SLOT_0_AXI_arvalid(axi_mem_intercon_M00_AXI_ARVALID),
+        .SLOT_0_AXI_awaddr(axi_mem_intercon_M00_AXI_AWADDR),
+        .SLOT_0_AXI_awcache(axi_mem_intercon_M00_AXI_AWCACHE),
+        .SLOT_0_AXI_awid(axi_mem_intercon_M00_AXI_AWID),
+        .SLOT_0_AXI_awlen(axi_mem_intercon_M00_AXI_AWLEN),
+        .SLOT_0_AXI_awprot(axi_mem_intercon_M00_AXI_AWPROT),
+        .SLOT_0_AXI_awready(axi_mem_intercon_M00_AXI_AWREADY),
+        .SLOT_0_AXI_awsize(axi_mem_intercon_M00_AXI_AWSIZE),
+        .SLOT_0_AXI_awvalid(axi_mem_intercon_M00_AXI_AWVALID),
+        .SLOT_0_AXI_bid(axi_mem_intercon_M00_AXI_BID[1:0]),
+        .SLOT_0_AXI_bready(axi_mem_intercon_M00_AXI_BREADY),
+        .SLOT_0_AXI_bresp(axi_mem_intercon_M00_AXI_BRESP),
+        .SLOT_0_AXI_bvalid(axi_mem_intercon_M00_AXI_BVALID),
+        .SLOT_0_AXI_rdata(axi_mem_intercon_M00_AXI_RDATA),
+        .SLOT_0_AXI_rid(axi_mem_intercon_M00_AXI_RID[1:0]),
+        .SLOT_0_AXI_rlast(axi_mem_intercon_M00_AXI_RLAST),
+        .SLOT_0_AXI_rready(axi_mem_intercon_M00_AXI_RREADY),
+        .SLOT_0_AXI_rresp(axi_mem_intercon_M00_AXI_RRESP),
+        .SLOT_0_AXI_rvalid(axi_mem_intercon_M00_AXI_RVALID),
+        .SLOT_0_AXI_wdata(axi_mem_intercon_M00_AXI_WDATA),
+        .SLOT_0_AXI_wid(axi_mem_intercon_M00_AXI_WID),
+        .SLOT_0_AXI_wlast(axi_mem_intercon_M00_AXI_WLAST),
+        .SLOT_0_AXI_wready(axi_mem_intercon_M00_AXI_WREADY),
+        .SLOT_0_AXI_wstrb(axi_mem_intercon_M00_AXI_WSTRB),
+        .SLOT_0_AXI_wvalid(axi_mem_intercon_M00_AXI_WVALID),
+        .clk(processing_system7_0_FCLK_CLK2),
+        .resetn(rst_ps7_0_142M_peripheral_aresetn));
   design_1_v_axi4s_vid_out_0_0 v_axi4s_vid_out_0
        (.aclk(processing_system7_0_FCLK_CLK2),
         .aclken(1'b1),

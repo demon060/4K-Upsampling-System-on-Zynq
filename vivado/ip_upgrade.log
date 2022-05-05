@@ -1,6 +1,27 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed May  4 16:27:29 2022
+| Host         : DESKTOP-CKC5QTJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Upsampling_Bayes_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Upsampling_Bayes_0_0 (xilinx.com:user:Upsampling_Bayes:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Sun May  1 22:01:51 2022
 | Host         : DESKTOP-9HE5DLC running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

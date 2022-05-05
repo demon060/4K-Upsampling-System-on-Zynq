@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun May  1 22:05:28 2022
--- Host        : DESKTOP-9HE5DLC running 64-bit major release  (build 9200)
+-- Date        : Wed May  4 16:36:25 2022
+-- Host        : DESKTOP-CKC5QTJ running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_Upsampling_Bayes_0_0/design_1_Upsampling_Bayes_0_0_sim_netlist.vhdl
+--               D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_Upsampling_Bayes_0_0/design_1_Upsampling_Bayes_0_0_sim_netlist.vhdl
 -- Design      : design_1_Upsampling_Bayes_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -69,21 +69,21 @@ architecture STRUCTURE of design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer is
   signal trans_eff_reg_i_1_n_0 : STD_LOGIC;
   signal trans_eff_reg_i_2_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \FSM_sequential_buffer_count[1]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \FSM_sequential_buffer_count[1]_i_1\ : label is "soft_lutpair15";
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_sequential_buffer_count_reg[0]\ : label is "iSTATE:01,iSTATE0:10,iSTATE1:00,iSTATE2:11";
   attribute FSM_ENCODED_STATES of \FSM_sequential_buffer_count_reg[1]\ : label is "iSTATE:01,iSTATE0:10,iSTATE1:00,iSTATE2:11";
-  attribute SOFT_HLUTNM of \buffer[10]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \buffer[11]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \buffer[12]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \buffer[13]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \buffer[14]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \buffer[15]_i_2\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \buffer[8]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \buffer[9]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \pixel_out_reg[4]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of stuck_INST_0 : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of trans_eff_reg_i_1 : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \buffer[10]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \buffer[11]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \buffer[12]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \buffer[13]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \buffer[14]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \buffer[15]_i_2\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \buffer[8]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \buffer[9]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \pixel_out_reg[4]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of stuck_INST_0 : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of trans_eff_reg_i_1 : label is "soft_lutpair15";
 begin
   trans_eff <= \^trans_eff\;
 \FSM_sequential_buffer_count[0]_i_1\: unisim.vcomponents.LUT4
@@ -1090,6 +1090,10 @@ entity design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS is
   attribute ORIG_REF_NAME of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS : entity is "Upsampling_Bayes_M00_AXIS";
   attribute PIXEL_WIDTH : integer;
   attribute PIXEL_WIDTH of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS : entity is 24;
+  attribute ROW_PIXEL_COUNT : integer;
+  attribute ROW_PIXEL_COUNT of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS : entity is 800;
+  attribute ROW_PIXEL_COUNT_BITS : integer;
+  attribute ROW_PIXEL_COUNT_BITS of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS : entity is 10;
   attribute SEND_STREAM : string;
   attribute SEND_STREAM of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS : entity is "2'b10";
   attribute WAIT_COUNT_BITS : integer;
@@ -1104,6 +1108,8 @@ architecture STRUCTURE of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXI
   signal \FSM_sequential_mst_exec_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_sequential_mst_exec_state[1]_i_2_n_0\ : STD_LOGIC;
   signal axis_tlast : STD_LOGIC;
+  signal axis_tlast_delay_i_2_n_0 : STD_LOGIC;
+  signal axis_tlast_delay_i_3_n_0 : STD_LOGIC;
   signal axis_tvalid : STD_LOGIC;
   signal axis_tvalid_delay_i_1_n_0 : STD_LOGIC;
   signal axis_tvalid_delay_i_3_n_0 : STD_LOGIC;
@@ -1118,10 +1124,19 @@ architecture STRUCTURE of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXI
   signal mst_exec_state : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal p_0_in : STD_LOGIC;
   signal \p_0_in__0\ : STD_LOGIC_VECTOR ( 4 downto 0 );
+  signal \p_0_in__1\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal p_1_in : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal read_pointer : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \read_pointer[0]_i_1_n_0\ : STD_LOGIC;
   signal \read_pointer[1]_i_1_n_0\ : STD_LOGIC;
+  signal \row_count[2]_i_1_n_0\ : STD_LOGIC;
+  signal \row_count[9]_i_1_n_0\ : STD_LOGIC;
+  signal \row_count[9]_i_2_n_0\ : STD_LOGIC;
+  signal \row_count[9]_i_4_n_0\ : STD_LOGIC;
+  signal \row_count[9]_i_5_n_0\ : STD_LOGIC;
+  signal \row_count[9]_i_6_n_0\ : STD_LOGIC;
+  signal \row_count[9]_i_7_n_0\ : STD_LOGIC;
+  signal row_count_reg : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal stream_data_fifo_0 : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal \stream_data_fifo_0[2][31]_i_1_n_0\ : STD_LOGIC;
   signal \stream_data_fifo_0_reg[0]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1133,26 +1148,33 @@ architecture STRUCTURE of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXI
   signal \stream_data_fifo_1_reg[1]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal \stream_data_fifo_1_reg[2]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal \stream_data_out[31]_i_3_n_0\ : STD_LOGIC;
+  signal tx_done : STD_LOGIC;
   signal tx_done_i_1_n_0 : STD_LOGIC;
-  signal tx_done_i_2_n_0 : STD_LOGIC;
-  signal tx_done_reg_n_0 : STD_LOGIC;
   signal tx_en : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \FSM_sequential_mst_exec_state[0]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \FSM_sequential_mst_exec_state[1]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \FSM_sequential_mst_exec_state[1]_i_2\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \FSM_sequential_mst_exec_state[0]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \FSM_sequential_mst_exec_state[1]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \FSM_sequential_mst_exec_state[1]_i_2\ : label is "soft_lutpair8";
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_sequential_mst_exec_state_reg[0]\ : label is "INIT_COUNTER:01,SEND_STREAM:10,IDLE:00";
   attribute FSM_ENCODED_STATES of \FSM_sequential_mst_exec_state_reg[1]\ : label is "INIT_COUNTER:01,SEND_STREAM:10,IDLE:00";
-  attribute SOFT_HLUTNM of axis_tlast_delay_i_1 : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of axis_tvalid_delay_i_3 : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \count[0]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \count[3]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \count[4]_i_2\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of fifo_full_INST_0 : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \stream_data_out[31]_i_3\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of axis_tlast_delay_i_2 : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of axis_tlast_delay_i_3 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \count[0]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \count[3]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \count[4]_i_2\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of fifo_full_INST_0 : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \row_count[1]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \row_count[2]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \row_count[3]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \row_count[4]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \row_count[8]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \row_count[9]_i_3\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \row_count[9]_i_4\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \row_count[9]_i_5\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \stream_data_out[31]_i_3\ : label is "soft_lutpair6";
 begin
   M_AXIS_TSTRB(3) <= \<const0>\;
   M_AXIS_TSTRB(2) <= \<const0>\;
@@ -1174,7 +1196,7 @@ begin
     )
         port map (
       I0 => \FSM_sequential_mst_exec_state[1]_i_2_n_0\,
-      I1 => tx_done_reg_n_0,
+      I1 => tx_done,
       I2 => mst_exec_state(0),
       I3 => mst_exec_state(1),
       O => \FSM_sequential_mst_exec_state[1]_i_1_n_0\
@@ -1211,14 +1233,40 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-axis_tlast_delay_i_1: unisim.vcomponents.LUT2
+axis_tlast_delay_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"2"
+      INIT => X"4000000000000000"
     )
         port map (
-      I0 => read_pointer(1),
-      I1 => read_pointer(0),
+      I0 => read_pointer(0),
+      I1 => read_pointer(1),
+      I2 => row_count_reg(4),
+      I3 => row_count_reg(3),
+      I4 => axis_tlast_delay_i_2_n_0,
+      I5 => axis_tlast_delay_i_3_n_0,
       O => axis_tlast
+    );
+axis_tlast_delay_i_2: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"80"
+    )
+        port map (
+      I0 => row_count_reg(2),
+      I1 => row_count_reg(1),
+      I2 => row_count_reg(0),
+      O => axis_tlast_delay_i_2_n_0
+    );
+axis_tlast_delay_i_3: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"01000000"
+    )
+        port map (
+      I0 => row_count_reg(7),
+      I1 => row_count_reg(6),
+      I2 => row_count_reg(5),
+      I3 => row_count_reg(9),
+      I4 => row_count_reg(8),
+      O => axis_tlast_delay_i_3_n_0
     );
 axis_tlast_delay_reg: unisim.vcomponents.FDRE
      port map (
@@ -1479,6 +1527,263 @@ fifo_write_selector_reg: unisim.vcomponents.FDRE
       D => \read_pointer[1]_i_1_n_0\,
       Q => read_pointer(1),
       R => axis_tvalid_delay_i_1_n_0
+    );
+\row_count[0]_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => row_count_reg(0),
+      O => \p_0_in__1\(0)
+    );
+\row_count[1]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => row_count_reg(0),
+      I1 => row_count_reg(1),
+      O => \p_0_in__1\(1)
+    );
+\row_count[2]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"78"
+    )
+        port map (
+      I0 => row_count_reg(1),
+      I1 => row_count_reg(0),
+      I2 => row_count_reg(2),
+      O => \row_count[2]_i_1_n_0\
+    );
+\row_count[3]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"7F80"
+    )
+        port map (
+      I0 => row_count_reg(0),
+      I1 => row_count_reg(1),
+      I2 => row_count_reg(2),
+      I3 => row_count_reg(3),
+      O => \p_0_in__1\(3)
+    );
+\row_count[4]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"7FFF8000"
+    )
+        port map (
+      I0 => row_count_reg(2),
+      I1 => row_count_reg(1),
+      I2 => row_count_reg(0),
+      I3 => row_count_reg(3),
+      I4 => row_count_reg(4),
+      O => \p_0_in__1\(4)
+    );
+\row_count[5]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"7FFFFFFF80000000"
+    )
+        port map (
+      I0 => row_count_reg(3),
+      I1 => row_count_reg(0),
+      I2 => row_count_reg(1),
+      I3 => row_count_reg(2),
+      I4 => row_count_reg(4),
+      I5 => row_count_reg(5),
+      O => \p_0_in__1\(5)
+    );
+\row_count[6]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"7FFF8000"
+    )
+        port map (
+      I0 => row_count_reg(4),
+      I1 => axis_tlast_delay_i_2_n_0,
+      I2 => row_count_reg(3),
+      I3 => row_count_reg(5),
+      I4 => row_count_reg(6),
+      O => \p_0_in__1\(6)
+    );
+\row_count[7]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"7FFFFFFF80000000"
+    )
+        port map (
+      I0 => row_count_reg(5),
+      I1 => row_count_reg(3),
+      I2 => axis_tlast_delay_i_2_n_0,
+      I3 => row_count_reg(4),
+      I4 => row_count_reg(6),
+      I5 => row_count_reg(7),
+      O => \p_0_in__1\(7)
+    );
+\row_count[8]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"7F80"
+    )
+        port map (
+      I0 => row_count_reg(6),
+      I1 => \row_count[9]_i_7_n_0\,
+      I2 => row_count_reg(7),
+      I3 => row_count_reg(8),
+      O => \p_0_in__1\(8)
+    );
+\row_count[9]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0D000000FFFFFFFF"
+    )
+        port map (
+      I0 => \row_count[9]_i_4_n_0\,
+      I1 => \row_count[9]_i_5_n_0\,
+      I2 => \row_count[9]_i_6_n_0\,
+      I3 => read_pointer(0),
+      I4 => read_pointer(1),
+      I5 => M_AXIS_ARESETN,
+      O => \row_count[9]_i_1_n_0\
+    );
+\row_count[9]_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => read_pointer(0),
+      I1 => read_pointer(1),
+      O => \row_count[9]_i_2_n_0\
+    );
+\row_count[9]_i_3\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"7FFF8000"
+    )
+        port map (
+      I0 => row_count_reg(7),
+      I1 => \row_count[9]_i_7_n_0\,
+      I2 => row_count_reg(6),
+      I3 => row_count_reg(8),
+      I4 => row_count_reg(9),
+      O => \p_0_in__1\(9)
+    );
+\row_count[9]_i_4\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"7FFFFFFF"
+    )
+        port map (
+      I0 => row_count_reg(3),
+      I1 => row_count_reg(4),
+      I2 => row_count_reg(1),
+      I3 => row_count_reg(2),
+      I4 => row_count_reg(0),
+      O => \row_count[9]_i_4_n_0\
+    );
+\row_count[9]_i_5\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"FE"
+    )
+        port map (
+      I0 => row_count_reg(5),
+      I1 => row_count_reg(7),
+      I2 => row_count_reg(6),
+      O => \row_count[9]_i_5_n_0\
+    );
+\row_count[9]_i_6\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"7"
+    )
+        port map (
+      I0 => row_count_reg(9),
+      I1 => row_count_reg(8),
+      O => \row_count[9]_i_6_n_0\
+    );
+\row_count[9]_i_7\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"8000000000000000"
+    )
+        port map (
+      I0 => row_count_reg(5),
+      I1 => row_count_reg(3),
+      I2 => row_count_reg(0),
+      I3 => row_count_reg(1),
+      I4 => row_count_reg(2),
+      I5 => row_count_reg(4),
+      O => \row_count[9]_i_7_n_0\
+    );
+\row_count_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(0),
+      Q => row_count_reg(0),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(1),
+      Q => row_count_reg(1),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \row_count[2]_i_1_n_0\,
+      Q => row_count_reg(2),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(3),
+      Q => row_count_reg(3),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[4]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(4),
+      Q => row_count_reg(4),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[5]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(5),
+      Q => row_count_reg(5),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[6]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(6),
+      Q => row_count_reg(6),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[7]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(7),
+      Q => row_count_reg(7),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[8]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(8),
+      Q => row_count_reg(8),
+      R => \row_count[9]_i_1_n_0\
+    );
+\row_count_reg[9]\: unisim.vcomponents.FDRE
+     port map (
+      C => M_AXIS_ACLK,
+      CE => \row_count[9]_i_2_n_0\,
+      D => \p_0_in__1\(9),
+      Q => row_count_reg(9),
+      R => \row_count[9]_i_1_n_0\
     );
 \stream_data_fifo_0[2][31]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -4311,33 +4616,24 @@ fifo_write_selector_reg: unisim.vcomponents.FDRE
     );
 tx_done_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0C8C8C8C8C8C8C8C"
+      INIT => X"8000000000000000"
     )
         port map (
-      I0 => tx_done_reg_n_0,
-      I1 => M_AXIS_ARESETN,
-      I2 => axis_tvalid_delay_i_3_n_0,
-      I3 => tx_done_i_2_n_0,
-      I4 => \stream_data_out[31]_i_3_n_0\,
-      I5 => M_AXIS_TREADY,
+      I0 => row_count_reg(4),
+      I1 => row_count_reg(3),
+      I2 => axis_tlast_delay_i_2_n_0,
+      I3 => axis_tlast_delay_i_3_n_0,
+      I4 => read_pointer(0),
+      I5 => read_pointer(1),
       O => tx_done_i_1_n_0
-    );
-tx_done_i_2: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => mst_exec_state(1),
-      I1 => mst_exec_state(0),
-      O => tx_done_i_2_n_0
     );
 tx_done_reg: unisim.vcomponents.FDRE
      port map (
       C => M_AXIS_ACLK,
       CE => '1',
       D => tx_done_i_1_n_0,
-      Q => tx_done_reg_n_0,
-      R => '0'
+      Q => tx_done,
+      R => axis_tvalid_delay_i_1_n_0
     );
 end STRUCTURE;
 library IEEE;
@@ -4988,6 +5284,10 @@ architecture STRUCTURE of design_1_Upsampling_Bayes_0_0_Upsampling_Bayes is
   attribute NUMBER_OF_OUTPUT_WORDS : integer;
   attribute NUMBER_OF_OUTPUT_WORDS of Upsampling_Bayes_M00_AXIS_inst : label is 3;
   attribute PIXEL_WIDTH of Upsampling_Bayes_M00_AXIS_inst : label is 24;
+  attribute ROW_PIXEL_COUNT : integer;
+  attribute ROW_PIXEL_COUNT of Upsampling_Bayes_M00_AXIS_inst : label is 800;
+  attribute ROW_PIXEL_COUNT_BITS : integer;
+  attribute ROW_PIXEL_COUNT_BITS of Upsampling_Bayes_M00_AXIS_inst : label is 10;
   attribute SEND_STREAM : string;
   attribute SEND_STREAM of Upsampling_Bayes_M00_AXIS_inst : label is "2'b10";
   attribute WAIT_COUNT_BITS : integer;

@@ -34,7 +34,7 @@
 
 #define TEST_START_VALUE 0xC
 
-#define NUMBER_OF_TRANSFERS 2
+#define NUMBER_OF_TRANSFERS 1
 
 #define DYNCLK_BASEADDR XPAR_AXI_DYNCLK_0_BASEADDR
 #define VGA_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
@@ -54,8 +54,8 @@ int loop_x = 0;
 
 XAxiDma AxiDma;
 
-u8 TxBufferPtr[WIDTH * MAX_PKT_LEN];
-u8 RxBufferPtr[WIDTH * MAX_PKT_LEN];
+u8 TxBufferPtr[HEIGHT * MAX_PKT_LEN];
+u8 RxBufferPtr[HEIGHT * MAX_PKT_LEN * 4];
 
 /*
  * Display Driver structs
@@ -80,7 +80,7 @@ int main(void) {
     int i;
 
     // PS to DDR TxBuffer:
-    DemoPrintTest(TxBufferPtr, WIDTH, HEIGHT, WIDTH * 3, DEMO_PATTERN_0);
+    pic_transfer(TxBufferPtr,gImage_pic_800_600, WIDTH, HEIGHT, WIDTH * 3, 0);
 
     xil_printf("\r\n--- Entering main() --- \r\n");
     // DDR TxBuffer to DMA; DMA to DDR RxBuffer
@@ -92,6 +92,10 @@ int main(void) {
         return XST_FAILURE;
     }
 
+
+    pic_transfer(frameBuf[0],RxBufferPtr, WIDTH, HEIGHT, WIDTH * 12, 2);
+
+
     // DDR RxBuufer to VDMA to HDMI
     // 关键函数： DisplayStart
     /*
@@ -99,8 +103,9 @@ int main(void) {
      */
     // 配置VDMA:
     // 设置 帧缓存
+
     for (i = 0; i < DISPLAY_NUM_FRAMES; i++) {
-        pFrames[i] = RxBufferPtr;
+        pFrames[i] = frameBuf[i];
     }
 
     // 配置控制寄存器
@@ -112,7 +117,7 @@ int main(void) {
     if (Status != XST_SUCCESS) {
         xil_printf("VDMA Configuration Initialization failed %d\r\n", Status);
     }
-
+    
     // 配置其他显示 IP：
     Status = DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR,
                                pFrames, DEMO_STRIDE);
@@ -133,153 +138,40 @@ int main(void) {
     return 0;
 }
 
-void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern) {
+void pic_transfer(u8 *output_pic, u8* input_pic, u32 width, u32 height, u32 stride, u32 position) {
     u32 xcoi, ycoi;
     u32 iPixelAddr = 0;
     u8 wRed, wBlue, wGreen;
     u32 xInt;
     u32 pic_number = 0;
+//    pic_number =(position == 1) ? 0 : (
+//                (position == 2) ? width * BYTES_PIXEL: (
+//                (position == 3) ? stride * height: (
+//                (position == 4) ? stride * height + width * BYTES_PIXEL : 0 )));
+//
+    // test
+    pic_number =(position == 1) ? 0 : (
+                (position == 2) ? width * BYTES_PIXEL: (
+                (position == 3) ? width * BYTES_PIXEL * 2: (
+                (position == 4) ? width * BYTES_PIXEL * 3 : 0 )));
 
-    switch (pattern) {
-        case DEMO_PATTERN_0:
-
-            for (ycoi = 0; ycoi < height; ycoi++) {
-                for (xcoi = 0; xcoi < (width * BYTES_PIXEL);
-                     xcoi += BYTES_PIXEL) {
-                    frame[xcoi + iPixelAddr + 0] =
-                        gImage_pic_800_600[pic_number++];
-                    frame[xcoi + iPixelAddr + 1] =
-                        gImage_pic_800_600[pic_number++];
-                    frame[xcoi + iPixelAddr + 2] =
-                        gImage_pic_800_600[pic_number++];
-                }
-                iPixelAddr += stride;  //?
-            }
-            /*
-             * Flush the framebuffer memory range to ensure changes are written
-             * to the actual memory, and therefore accessible by the VDMA.
-             */
-            Xil_DCacheFlushRange((unsigned int)frame, DEMO_MAX_FRAME);
-            break;
-        case DEMO_PATTERN_1:  // Grid
-
-            for (ycoi = 0; ycoi < height; ycoi++) {
-                for (xcoi = 0; xcoi < (width * BYTES_PIXEL);
-                     xcoi += BYTES_PIXEL) {
-                    if (((xcoi / BYTES_PIXEL) & 0x20) ^ (ycoi & 0x20)) {
-                        wRed = 255;
-                        wGreen = 255;
-                        wBlue = 255;
-                    } else {
-                        wRed = 0;
-                        wGreen = 0;
-                        wBlue = 0;
-                    }
-
-                    frame[xcoi + iPixelAddr + 0] = wBlue;
-                    frame[xcoi + iPixelAddr + 1] = wGreen;
-                    frame[xcoi + iPixelAddr + 2] = wRed;
-                }
-                iPixelAddr += stride;
-            }
-            /*
-             * Flush the framebuffer memory range to ensure changes are written
-             * to the actual memory, and therefore accessible by the VDMA.
-             */
-            Xil_DCacheFlushRange((unsigned int)frame, DEMO_MAX_FRAME);
-            break;
-        case DEMO_PATTERN_2:  // 8 intervals color bar
-
-            for (ycoi = 0; ycoi < height; ycoi++) {
-                for (xcoi = 0; xcoi < (width * BYTES_PIXEL);
-                     xcoi += BYTES_PIXEL) {
-                    frame[xcoi + iPixelAddr + 0] = xcoi / BYTES_PIXEL;
-                    frame[xcoi + iPixelAddr + 1] = xcoi / BYTES_PIXEL;
-                    frame[xcoi + iPixelAddr + 2] = xcoi / BYTES_PIXEL;
-                }
-                iPixelAddr += stride;
-            }
-            /*
-             * Flush the framebuffer memory range to ensure changes are written
-             * to the actual memory, and therefore accessible by the VDMA.
-             */
-            Xil_DCacheFlushRange((unsigned int)frame, DEMO_MAX_FRAME);
-            break;
-        case DEMO_PATTERN_3:  // 8 intervals color bar
-
-            xInt = width * BYTES_PIXEL / 8;  // each with width/8 pixels
-
-            for (ycoi = 0; ycoi < height; ycoi++) {
-                /*
-                 * Just draw white in the last partial interval (when width is
-                 * not divisible by 7)
-                 */
-
-                for (xcoi = 0; xcoi < (width * BYTES_PIXEL);
-                     xcoi += BYTES_PIXEL) {
-                    if (xcoi < xInt) {  // White color
-                        wRed = 255;
-                        wGreen = 255;
-                        wBlue = 255;
-                    }
-
-                    else if ((xcoi >= xInt) &&
-                             (xcoi < xInt * 2)) {  // YELLOW color
-                        wRed = 255;
-                        wGreen = 255;
-                        wBlue = 0;
-                    } else if ((xcoi >= xInt * 2) &&
-                               (xcoi < xInt * 3)) {  // CYAN color
-                        wRed = 0;
-                        wGreen = 255;
-                        wBlue = 255;
-                    } else if ((xcoi >= xInt * 3) &&
-                               (xcoi < xInt * 4)) {  // GREEN color
-                        wRed = 0;
-                        wGreen = 255;
-                        wBlue = 0;
-                    } else if ((xcoi >= xInt * 4) &&
-                               (xcoi < xInt * 5)) {  // MAGENTA color
-                        wRed = 255;
-                        wGreen = 0;
-                        wBlue = 255;
-                    } else if ((xcoi >= xInt * 5) &&
-                               (xcoi < xInt * 6)) {  // RED color
-                        wRed = 255;
-                        wGreen = 0;
-                        wBlue = 0;
-                    } else if ((xcoi >= xInt * 6) &&
-                               (xcoi < xInt * 7)) {  // BLUE color
-                        wRed = 0;
-                        wGreen = 0;
-                        wBlue = 255;
-                    } else {  // BLACK color
-                        wRed = 0;
-                        wGreen = 0;
-                        wBlue = 0;
-                    }
-
-                    frame[xcoi + iPixelAddr + 0] = wBlue;
-                    frame[xcoi + iPixelAddr + 1] = wGreen;
-                    frame[xcoi + iPixelAddr + 2] = wRed;
-                    /*
-                     * This pattern is printed one vertical line at a time, so
-                     * the address must be incremented by the stride instead of
-                     * just 1.
-                     */
-                }
-                iPixelAddr += stride;
-            }
-            /*
-             * Flush the framebuffer memory range to ensure changes are written
-             * to the actual memory, and therefore accessible by the VDMA.
-             */
-            Xil_DCacheFlushRange((unsigned int)frame, DEMO_MAX_FRAME);
-            break;
-        default:
-            xil_printf("Error: invalid pattern passed to DemoPrintTest");
+    for (ycoi = 0; ycoi < height; ycoi++) {
+        for (xcoi = 0; xcoi < (width * BYTES_PIXEL);
+             xcoi += BYTES_PIXEL) {
+            output_pic[xcoi  + 0 + iPixelAddr] =
+                input_pic[pic_number++];
+            output_pic[xcoi  + 1 + iPixelAddr] =
+                input_pic[pic_number++];
+            output_pic[xcoi  + 2 + iPixelAddr] =
+                input_pic[pic_number++];
+        }
+        if(position != 0)pic_number =  pic_number + stride - width * BYTES_PIXEL;  //
+        iPixelAddr += width * BYTES_PIXEL;
     }
+    Xil_DCacheFlushRange((unsigned int)output_pic, DEMO_MAX_FRAME);
 }
+
+
 
 int SetInterruptInit(XScuGic *InstancePtr, u16 IntrID, XAxiDma *XAxiDmaPtr) {
     XScuGic_Config *Config;
@@ -339,7 +231,7 @@ int XAxiDma_Setup(u16 DeviceId) {
     Status = SetInterruptInit(&INST, INTR_ID, &AxiDma);
     if (Status != XST_SUCCESS) return XST_FAILURE;
 
-    // 关闭 MM2S 中断 ， 打开 S2MM IOC中断  管 VDMA 中断
+    // 关闭 MM2S 中断 ， 打开 S2MM IOC中断  关 VDMA 中断
     /* Disable MM2S interrupt, Enable S2MM interrupt */
     XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_IOC_MASK, XAXIDMA_DEVICE_TO_DMA);
     XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
@@ -395,8 +287,8 @@ int XAxiDma_Setup(u16 DeviceId) {
             }
             // DMA S2MM FIFO to DDR
             Status = XAxiDma_SimpleTransfer(
-                &AxiDma, (UINTPTR)(&RxBufferPtr[loop_x * MAX_PKT_LEN]),
-                MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
+                &AxiDma, (UINTPTR)(&RxBufferPtr[(4*loop_x) * MAX_PKT_LEN ]),
+                4*MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
 
             if (Status != XST_SUCCESS) {
                 return XST_FAILURE;
@@ -415,7 +307,7 @@ int XAxiDma_Setup(u16 DeviceId) {
 static int CheckData(void) {
     u8 *RxPacket;
 
-    RxPacket = (UINTPTR)(&RxBufferPtr[loop_x * MAX_PKT_LEN]);
+    RxPacket = (UINTPTR)(&RxBufferPtr[loop_x * MAX_PKT_LEN*4]);
 
     xil_printf("Enter Interrupt\r\n");
     /*Clear Interrupt*/
@@ -425,7 +317,7 @@ static int CheckData(void) {
      * Data Cache is enabled
      */
     // 将 DDR 中的数据写入 Cache
-    Xil_DCacheInvalidateRange((UINTPTR)RxPacket, MAX_PKT_LEN);
+    Xil_DCacheInvalidateRange((UINTPTR)RxPacket, MAX_PKT_LEN*4);
 
     return XST_SUCCESS;
 }

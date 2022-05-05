@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun May  1 22:06:15 2022
-| Host         : DESKTOP-9HE5DLC running 64-bit major release  (build 9200)
+| Date         : Wed May  4 16:41:54 2022
+| Host         : DESKTOP-CKC5QTJ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : 7z020clg400-1
@@ -162,6 +162,7 @@ Table of Contents
 | design_1_xbar_1                 |    1 |
 | design_1_v_tc_0_0               |    1 |
 | design_1_v_axi4s_vid_out_0_0    |    1 |
+| design_1_system_ila_1_2         |    1 |
 | design_1_system_ila_0_2         |    1 |
 | design_1_rst_ps7_0_142M_0       |    1 |
 | design_1_rst_ps7_0_100M_2       |    1 |

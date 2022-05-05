@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sun May  1 22:05:28 2022
-// Host        : DESKTOP-9HE5DLC running 64-bit major release  (build 9200)
+// Date        : Wed May  4 16:36:25 2022
+// Host        : DESKTOP-CKC5QTJ running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_Upsampling_Bayes_0_0/design_1_Upsampling_Bayes_0_0_sim_netlist.v
+//               D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_Upsampling_Bayes_0_0/design_1_Upsampling_Bayes_0_0_sim_netlist.v
 // Design      : design_1_Upsampling_Bayes_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -157,7 +157,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I2(buffer_count__0[0]),
         .I3(buf_wren),
         .O(\FSM_sequential_buffer_count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
     .INIT(16'h6C4C)) 
     \FSM_sequential_buffer_count[1]_i_1 
@@ -189,7 +189,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I3(buffer_count__0[0]),
         .I4(data_in[24]),
         .O(buffer[0]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \buffer[10]_i_1 
@@ -197,7 +197,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I1(buffer_count__0[1]),
         .I2(data_in[26]),
         .O(buffer[10]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \buffer[11]_i_1 
@@ -205,7 +205,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I1(buffer_count__0[1]),
         .I2(data_in[27]),
         .O(buffer[11]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \buffer[12]_i_1 
@@ -213,7 +213,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I1(buffer_count__0[1]),
         .I2(data_in[28]),
         .O(buffer[12]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \buffer[13]_i_1 
@@ -221,7 +221,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I1(buffer_count__0[1]),
         .I2(data_in[29]),
         .O(buffer[13]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \buffer[14]_i_1 
@@ -238,7 +238,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I3(buf_rden),
         .I4(buf_wren),
         .O(p_0_in__0[15]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \buffer[15]_i_2 
@@ -327,7 +327,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I3(buffer_count__0[0]),
         .I4(data_in[31]),
         .O(buffer[7]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \buffer[8]_i_1 
@@ -335,7 +335,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I1(buffer_count__0[1]),
         .I2(data_in[24]),
         .O(buffer[8]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \buffer[9]_i_1 
@@ -662,7 +662,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I2(buffer_count__0[1]),
         .I3(buffer_count__0[0]),
         .O(pixel_out_reg0_in[3]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'hCCCA)) 
     \pixel_out_reg[4]_i_1 
@@ -857,7 +857,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .D(pixel_out_reg0_in[9]),
         .Q(pixel_out[9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'h8F)) 
     stuck_INST_0
@@ -865,7 +865,7 @@ module design_1_Upsampling_Bayes_0_0_AXIS_to_pixel_buffer
         .I1(buffer_count__0[0]),
         .I2(buf_rden),
         .O(stuck));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT5 #(
     .INIT(32'hFFAAD580)) 
     trans_eff_reg_i_1
@@ -973,6 +973,8 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes
   (* INIT_COUNTER = "2'b01" *) 
   (* NUMBER_OF_OUTPUT_WORDS = "3" *) 
   (* PIXEL_WIDTH = "24" *) 
+  (* ROW_PIXEL_COUNT = "800" *) 
+  (* ROW_PIXEL_COUNT_BITS = "10" *) 
   (* SEND_STREAM = "2'b10" *) 
   (* WAIT_COUNT_BITS = "5" *) 
   (* bit_num = "2" *) 
@@ -1497,8 +1499,8 @@ endmodule
 
 (* C_M_AXIS_TDATA_WIDTH = "32" *) (* C_M_START_COUNT = "32" *) (* IDLE = "2'b00" *) 
 (* INIT_COUNTER = "2'b01" *) (* NUMBER_OF_OUTPUT_WORDS = "3" *) (* ORIG_REF_NAME = "Upsampling_Bayes_M00_AXIS" *) 
-(* PIXEL_WIDTH = "24" *) (* SEND_STREAM = "2'b10" *) (* WAIT_COUNT_BITS = "5" *) 
-(* bit_num = "2" *) 
+(* PIXEL_WIDTH = "24" *) (* ROW_PIXEL_COUNT = "800" *) (* ROW_PIXEL_COUNT_BITS = "10" *) 
+(* SEND_STREAM = "2'b10" *) (* WAIT_COUNT_BITS = "5" *) (* bit_num = "2" *) 
 module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
    (M_AXIS_send_data,
     fifo_wren,
@@ -1533,6 +1535,8 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
   wire M_AXIS_TVALID;
   wire [95:0]M_AXIS_send_data;
   wire axis_tlast;
+  wire axis_tlast_delay_i_2_n_0;
+  wire axis_tlast_delay_i_3_n_0;
   wire axis_tvalid;
   wire axis_tvalid_delay_i_1_n_0;
   wire axis_tvalid_delay_i_3_n_0;
@@ -1549,10 +1553,19 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
   wire [1:0]mst_exec_state;
   wire p_0_in;
   wire [4:0]p_0_in__0;
+  wire [9:0]p_0_in__1;
   wire [31:0]p_1_in;
   wire [1:0]read_pointer;
   wire \read_pointer[0]_i_1_n_0 ;
   wire \read_pointer[1]_i_1_n_0 ;
+  wire \row_count[2]_i_1_n_0 ;
+  wire \row_count[9]_i_1_n_0 ;
+  wire \row_count[9]_i_2_n_0 ;
+  wire \row_count[9]_i_4_n_0 ;
+  wire \row_count[9]_i_5_n_0 ;
+  wire \row_count[9]_i_6_n_0 ;
+  wire \row_count[9]_i_7_n_0 ;
+  wire [9:0]row_count_reg;
   wire [31:0]stream_data_fifo_0;
   wire \stream_data_fifo_0[2][31]_i_1_n_0 ;
   wire [31:0]\stream_data_fifo_0_reg[0] ;
@@ -1564,16 +1577,15 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
   wire [31:0]\stream_data_fifo_1_reg[1] ;
   wire [31:0]\stream_data_fifo_1_reg[2] ;
   wire \stream_data_out[31]_i_3_n_0 ;
+  wire tx_done;
   wire tx_done_i_1_n_0;
-  wire tx_done_i_2_n_0;
-  wire tx_done_reg_n_0;
   wire tx_en;
 
   assign M_AXIS_TSTRB[3] = \<const0> ;
   assign M_AXIS_TSTRB[2] = \<const0> ;
   assign M_AXIS_TSTRB[1] = \<const0> ;
   assign M_AXIS_TSTRB[0] = \<const0> ;
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'hC7)) 
     \FSM_sequential_mst_exec_state[0]_i_1 
@@ -1581,16 +1593,16 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .I1(mst_exec_state[0]),
         .I2(mst_exec_state[1]),
         .O(\FSM_sequential_mst_exec_state[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'hF3A0)) 
     \FSM_sequential_mst_exec_state[1]_i_1 
        (.I0(\FSM_sequential_mst_exec_state[1]_i_2_n_0 ),
-        .I1(tx_done_reg_n_0),
+        .I1(tx_done),
         .I2(mst_exec_state[0]),
         .I3(mst_exec_state[1]),
         .O(\FSM_sequential_mst_exec_state[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT5 #(
     .INIT(32'h80000000)) 
     \FSM_sequential_mst_exec_state[1]_i_2 
@@ -1616,13 +1628,34 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .R(axis_tvalid_delay_i_1_n_0));
   GND GND
        (.G(\<const0> ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+  LUT6 #(
+    .INIT(64'h4000000000000000)) 
     axis_tlast_delay_i_1
-       (.I0(read_pointer[1]),
-        .I1(read_pointer[0]),
+       (.I0(read_pointer[0]),
+        .I1(read_pointer[1]),
+        .I2(row_count_reg[4]),
+        .I3(row_count_reg[3]),
+        .I4(axis_tlast_delay_i_2_n_0),
+        .I5(axis_tlast_delay_i_3_n_0),
         .O(axis_tlast));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT3 #(
+    .INIT(8'h80)) 
+    axis_tlast_delay_i_2
+       (.I0(row_count_reg[2]),
+        .I1(row_count_reg[1]),
+        .I2(row_count_reg[0]),
+        .O(axis_tlast_delay_i_2_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT5 #(
+    .INIT(32'h01000000)) 
+    axis_tlast_delay_i_3
+       (.I0(row_count_reg[7]),
+        .I1(row_count_reg[6]),
+        .I2(row_count_reg[5]),
+        .I3(row_count_reg[9]),
+        .I4(row_count_reg[8]),
+        .O(axis_tlast_delay_i_3_n_0));
   FDRE axis_tlast_delay_reg
        (.C(M_AXIS_ACLK),
         .CE(1'b1),
@@ -1644,7 +1677,6 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .I4(fifo_write_selector),
         .I5(p_0_in),
         .O(axis_tvalid));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT2 #(
     .INIT(4'h7)) 
     axis_tvalid_delay_i_3
@@ -1657,20 +1689,20 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .D(axis_tvalid),
         .Q(M_AXIS_TVALID),
         .R(axis_tvalid_delay_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \count[0]_i_1 
        (.I0(count_reg[0]),
         .O(p_0_in__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \count[1]_i_1 
        (.I0(count_reg[0]),
         .I1(count_reg[1]),
         .O(p_0_in__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[2]_i_1 
@@ -1678,7 +1710,7 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .I1(count_reg[1]),
         .I2(count_reg[2]),
         .O(\count[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count[3]_i_1 
@@ -1694,7 +1726,7 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .I1(mst_exec_state[0]),
         .I2(\FSM_sequential_mst_exec_state[1]_i_2_n_0 ),
         .O(count));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \count[4]_i_2 
@@ -1734,7 +1766,7 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .D(p_0_in__0[4]),
         .Q(count_reg[4]),
         .R(axis_tvalid_delay_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT2 #(
     .INIT(4'h8)) 
     fifo_full_INST_0
@@ -1821,6 +1853,203 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .D(\read_pointer[1]_i_1_n_0 ),
         .Q(read_pointer[1]),
         .R(axis_tvalid_delay_i_1_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \row_count[0]_i_1 
+       (.I0(row_count_reg[0]),
+        .O(p_0_in__1[0]));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
+    \row_count[1]_i_1 
+       (.I0(row_count_reg[0]),
+        .I1(row_count_reg[1]),
+        .O(p_0_in__1[1]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
+    \row_count[2]_i_1 
+       (.I0(row_count_reg[1]),
+        .I1(row_count_reg[0]),
+        .I2(row_count_reg[2]),
+        .O(\row_count[2]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT4 #(
+    .INIT(16'h7F80)) 
+    \row_count[3]_i_1 
+       (.I0(row_count_reg[0]),
+        .I1(row_count_reg[1]),
+        .I2(row_count_reg[2]),
+        .I3(row_count_reg[3]),
+        .O(p_0_in__1[3]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT5 #(
+    .INIT(32'h7FFF8000)) 
+    \row_count[4]_i_1 
+       (.I0(row_count_reg[2]),
+        .I1(row_count_reg[1]),
+        .I2(row_count_reg[0]),
+        .I3(row_count_reg[3]),
+        .I4(row_count_reg[4]),
+        .O(p_0_in__1[4]));
+  LUT6 #(
+    .INIT(64'h7FFFFFFF80000000)) 
+    \row_count[5]_i_1 
+       (.I0(row_count_reg[3]),
+        .I1(row_count_reg[0]),
+        .I2(row_count_reg[1]),
+        .I3(row_count_reg[2]),
+        .I4(row_count_reg[4]),
+        .I5(row_count_reg[5]),
+        .O(p_0_in__1[5]));
+  LUT5 #(
+    .INIT(32'h7FFF8000)) 
+    \row_count[6]_i_1 
+       (.I0(row_count_reg[4]),
+        .I1(axis_tlast_delay_i_2_n_0),
+        .I2(row_count_reg[3]),
+        .I3(row_count_reg[5]),
+        .I4(row_count_reg[6]),
+        .O(p_0_in__1[6]));
+  LUT6 #(
+    .INIT(64'h7FFFFFFF80000000)) 
+    \row_count[7]_i_1 
+       (.I0(row_count_reg[5]),
+        .I1(row_count_reg[3]),
+        .I2(axis_tlast_delay_i_2_n_0),
+        .I3(row_count_reg[4]),
+        .I4(row_count_reg[6]),
+        .I5(row_count_reg[7]),
+        .O(p_0_in__1[7]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT4 #(
+    .INIT(16'h7F80)) 
+    \row_count[8]_i_1 
+       (.I0(row_count_reg[6]),
+        .I1(\row_count[9]_i_7_n_0 ),
+        .I2(row_count_reg[7]),
+        .I3(row_count_reg[8]),
+        .O(p_0_in__1[8]));
+  LUT6 #(
+    .INIT(64'h0D000000FFFFFFFF)) 
+    \row_count[9]_i_1 
+       (.I0(\row_count[9]_i_4_n_0 ),
+        .I1(\row_count[9]_i_5_n_0 ),
+        .I2(\row_count[9]_i_6_n_0 ),
+        .I3(read_pointer[0]),
+        .I4(read_pointer[1]),
+        .I5(M_AXIS_ARESETN),
+        .O(\row_count[9]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \row_count[9]_i_2 
+       (.I0(read_pointer[0]),
+        .I1(read_pointer[1]),
+        .O(\row_count[9]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT5 #(
+    .INIT(32'h7FFF8000)) 
+    \row_count[9]_i_3 
+       (.I0(row_count_reg[7]),
+        .I1(\row_count[9]_i_7_n_0 ),
+        .I2(row_count_reg[6]),
+        .I3(row_count_reg[8]),
+        .I4(row_count_reg[9]),
+        .O(p_0_in__1[9]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT5 #(
+    .INIT(32'h7FFFFFFF)) 
+    \row_count[9]_i_4 
+       (.I0(row_count_reg[3]),
+        .I1(row_count_reg[4]),
+        .I2(row_count_reg[1]),
+        .I3(row_count_reg[2]),
+        .I4(row_count_reg[0]),
+        .O(\row_count[9]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT3 #(
+    .INIT(8'hFE)) 
+    \row_count[9]_i_5 
+       (.I0(row_count_reg[5]),
+        .I1(row_count_reg[7]),
+        .I2(row_count_reg[6]),
+        .O(\row_count[9]_i_5_n_0 ));
+  LUT2 #(
+    .INIT(4'h7)) 
+    \row_count[9]_i_6 
+       (.I0(row_count_reg[9]),
+        .I1(row_count_reg[8]),
+        .O(\row_count[9]_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'h8000000000000000)) 
+    \row_count[9]_i_7 
+       (.I0(row_count_reg[5]),
+        .I1(row_count_reg[3]),
+        .I2(row_count_reg[0]),
+        .I3(row_count_reg[1]),
+        .I4(row_count_reg[2]),
+        .I5(row_count_reg[4]),
+        .O(\row_count[9]_i_7_n_0 ));
+  FDRE \row_count_reg[0] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[0]),
+        .Q(row_count_reg[0]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[1] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[1]),
+        .Q(row_count_reg[1]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[2] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(\row_count[2]_i_1_n_0 ),
+        .Q(row_count_reg[2]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[3] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[3]),
+        .Q(row_count_reg[3]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[4] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[4]),
+        .Q(row_count_reg[4]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[5] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[5]),
+        .Q(row_count_reg[5]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[6] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[6]),
+        .Q(row_count_reg[6]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[7] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[7]),
+        .Q(row_count_reg[7]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[8] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[8]),
+        .Q(row_count_reg[8]),
+        .R(\row_count[9]_i_1_n_0 ));
+  FDRE \row_count_reg[9] 
+       (.C(M_AXIS_ACLK),
+        .CE(\row_count[9]_i_2_n_0 ),
+        .D(p_0_in__1[9]),
+        .Q(row_count_reg[9]),
+        .R(\row_count[9]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'h0020)) 
     \stream_data_fifo_0[2][31]_i_1 
@@ -3429,7 +3658,7 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .I2(mst_exec_state[1]),
         .I3(mst_exec_state[0]),
         .O(tx_en));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
     .INIT(32'h00E2E2E2)) 
     \stream_data_out[31]_i_3 
@@ -3936,27 +4165,21 @@ module design_1_Upsampling_Bayes_0_0_Upsampling_Bayes_M00_AXIS
         .O(p_1_in[9]),
         .S(fifo_write_selector));
   LUT6 #(
-    .INIT(64'h0C8C8C8C8C8C8C8C)) 
+    .INIT(64'h8000000000000000)) 
     tx_done_i_1
-       (.I0(tx_done_reg_n_0),
-        .I1(M_AXIS_ARESETN),
-        .I2(axis_tvalid_delay_i_3_n_0),
-        .I3(tx_done_i_2_n_0),
-        .I4(\stream_data_out[31]_i_3_n_0 ),
-        .I5(M_AXIS_TREADY),
+       (.I0(row_count_reg[4]),
+        .I1(row_count_reg[3]),
+        .I2(axis_tlast_delay_i_2_n_0),
+        .I3(axis_tlast_delay_i_3_n_0),
+        .I4(read_pointer[0]),
+        .I5(read_pointer[1]),
         .O(tx_done_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    tx_done_i_2
-       (.I0(mst_exec_state[1]),
-        .I1(mst_exec_state[0]),
-        .O(tx_done_i_2_n_0));
   FDRE tx_done_reg
        (.C(M_AXIS_ACLK),
         .CE(1'b1),
         .D(tx_done_i_1_n_0),
-        .Q(tx_done_reg_n_0),
-        .R(1'b0));
+        .Q(tx_done),
+        .R(axis_tvalid_delay_i_1_n_0));
 endmodule
 
 (* C_S_AXIS_TDATA_WIDTH = "32" *) (* IDLE = "2'b00" *) (* NUMBER_OF_INPUT_WORDS = "8" *) 

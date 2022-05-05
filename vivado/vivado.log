@@ -2,28 +2,63 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Start of session at: Wed May  4 16:25:48 2022
+# Process ID: 11420
+# Current directory: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23332 D:\SISR\github\4K-Upsampling-System-on-Zynq\vivado\vivado.xpr
+# Log file: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.log
+# Journal file: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado\vivado.jou
+=======
+=======
+>>>>>>> upstream/master
 # Start of session at: Wed May  4 15:56:11 2022
 # Process ID: 18080
 # Current directory: E:/Code/4K-Upsampling-System-on-Zynq/vivado
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7724 E:\Code\4K-Upsampling-System-on-Zynq\vivado\vivado.xpr
 # Log file: E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.log
 # Journal file: E:/Code/4K-Upsampling-System-on-Zynq/vivado\vivado.jou
+>>>>>>> upstream/master
 #-----------------------------------------------------------
 start_gui
-open_project E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.xpr
+open_project D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Code/4K-Upsampling-System-on-Zynq/vivado' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+<<<<<<< HEAD
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SISR/github/4K-Upsampling-System-on-Zynq/src/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SISR/github/4K-Upsampling-System-on-Zynq/src/verilog/upsampling'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xlinx/vivado/2019.2/data/ip'.
+=======
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
 List of locked IPs:
 design_1_Upsampling_Bayes_0_0
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 1052.953 ; gain = 384.785
+=======
 open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1027.258 ; gain = 374.852
+>>>>>>> upstream/master
+=======
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1027.258 ; gain = 374.852
+>>>>>>> upstream/master
 update_compile_order -fileset sources_1
-open_bd_design {E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SISR/github/4K-Upsampling-System-on-Zynq/src/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SISR/github/4K-Upsampling-System-on-Zynq/src/verilog/upsampling'.
+upgrade_ip -vlnv xilinx.com:user:Upsampling_Bayes:1.0 [get_ips  design_1_Upsampling_Bayes_0_0] -log ip_upgrade.log
 Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
 Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
 Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
@@ -52,7 +87,208 @@ Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_
 Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
 Adding component instance block -- xilinx.com:user:Upsampling_Bayes:1.0 - Upsampling_Bayes_0
 WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dynclk_0/LOCKED_O(undef) and /rgb2dvi_0/aRst_n(rst)
+<<<<<<< HEAD
+<<<<<<< HEAD
+Successfully read diagram <design_1> from BD file <D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_Upsampling_Bayes_0_0 (Upsampling_Bayes_v1_0 1.0) from revision 11 to revision 12
+Wrote  : <D:\SISR\github\4K-Upsampling-System-on-Zynq\vivado\vivado.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1764.426 ; gain = 0.000
+export_ip_user_files -of_objects [get_ips design_1_Upsampling_Bayes_0_0] -no_script -sync -force -quiet
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_mem_intercon_M00_AXI}]
+true
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axi_mem_intercon_M00_AXI] {AXI_R_ADDRESS "Data and Trigger" AXI_R_DATA "Data and Trigger" AXI_W_ADDRESS "Data and Trigger" AXI_W_DATA "Data and Trigger" AXI_W_RESPONSE "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK1" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Instantiating new System ILA block '/system_ila_1' with mode INTERFACE, 1 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting source clock pin /processing_system7_0/FCLK_CLK1 to the following sink clock pins :
+/system_ila_1/clk
+Debug Automation : Connecting source reset pin /rst_ps7_0_142M/peripheral_aresetn to the following sink reset pins :
+/system_ila_1/resetn
+Debug Automation : Connecting interface connection /axi_mem_intercon_M00_AXI, to System ILA slot interface pin /system_ila_1/SLOT_0_AXI for debug.
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {54} CONFIG.C_DATA_DEPTH {8192} CONFIG.C_NUM_MONITOR_SLOTS {4}] [get_bd_cells system_ila_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_CNT' from '26' to '54' has been ignored for IP 'system_ila_0'
+endgroup
+delete_bd_objs [get_bd_cells system_ila_1]
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axi_mem_intercon_M00_AXI] {AXI_R_ADDRESS "Data and Trigger" AXI_R_DATA "Data and Trigger" AXI_W_ADDRESS "Data and Trigger" AXI_W_DATA "Data and Trigger" AXI_W_RESPONSE "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK1" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Instantiating new System ILA block '/system_ila_1' with mode INTERFACE, 1 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting source clock pin /processing_system7_0/FCLK_CLK1 to the following sink clock pins :
+/system_ila_1/clk
+Debug Automation : Connecting source reset pin /rst_ps7_0_142M/peripheral_aresetn to the following sink reset pins :
+/system_ila_1/resetn
+Debug Automation : Connecting interface connection /axi_mem_intercon_M00_AXI, to System ILA slot interface pin /system_ila_1/SLOT_0_AXI for debug.
+delete_bd_objs [get_bd_cells system_ila_1]
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_3_AXI] -boundary_type upper [get_bd_intf_pins axi_mem_intercon/M00_AXI]
+save_bd_design
+Wrote  : <D:\SISR\github\4K-Upsampling-System-on-Zynq\vivado\vivado.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /system_ila_0/SLOT_3_AXI(100000000) and /axi_mem_intercon/m00_couplers/auto_pc/M_AXI(142857132)
+ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /system_ila_0/SLOT_3_AXI(design_1_processing_system7_0_1_FCLK_CLK0) and /axi_mem_intercon/m00_couplers/auto_pc/M_AXI(design_1_processing_system7_0_1_FCLK_CLK1)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd 
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+generate_target all [get_files  D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /system_ila_0/SLOT_3_AXI(100000000) and /axi_mem_intercon/m00_couplers/auto_pc/M_AXI(142857132)
+ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /system_ila_0/SLOT_3_AXI(design_1_processing_system7_0_1_FCLK_CLK0) and /axi_mem_intercon/m00_couplers/auto_pc/M_AXI(design_1_processing_system7_0_1_FCLK_CLK1)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd 
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1764.426 ; gain = 0.000
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+delete_bd_objs [get_bd_intf_nets axi_mem_intercon_M00_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_mem_intercon/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {85} CONFIG.C_NUM_MONITOR_SLOTS {3}] [get_bd_cells system_ila_0]
+endgroup
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_mem_intercon_M00_AXI}]
+true
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axi_mem_intercon_M00_AXI] {AXI_R_ADDRESS "Data and Trigger" AXI_R_DATA "Data and Trigger" AXI_W_ADDRESS "Data and Trigger" AXI_W_DATA "Data and Trigger" AXI_W_RESPONSE "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK1" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Instantiating new System ILA block '/system_ila_1' with mode INTERFACE, 1 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting source clock pin /processing_system7_0/FCLK_CLK1 to the following sink clock pins :
+/system_ila_1/clk
+Debug Automation : Connecting source reset pin /rst_ps7_0_142M/peripheral_aresetn to the following sink reset pins :
+/system_ila_1/resetn
+Debug Automation : Connecting interface connection /axi_mem_intercon_M00_AXI, to System ILA slot interface pin /system_ila_1/SLOT_0_AXI for debug.
+endgroup
+generate_target all [get_files  D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [xilinx.com:ip:axi_vdma:6.3-16] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+Wrote  : <D:\SISR\github\4K-Upsampling-System-on-Zynq\vivado\vivado.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_1/SLOT_0_AXI_rid'(2) to net 'axi_mem_intercon_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_1/SLOT_0_AXI_bid'(2) to net 'axi_mem_intercon_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(2) - Only lower order bits will be connected.
+VHDL Output written to : D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_1/SLOT_0_AXI_rid'(2) to net 'axi_mem_intercon_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_1/SLOT_0_AXI_bid'(2) to net 'axi_mem_intercon_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(2) - Only lower order bits will be connected.
+VHDL Output written to : D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dynclk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_142M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Upsampling_Bayes_0 .
+Exporting to file d:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_2/bd_0/hw_handoff/design_1_system_ila_0_2.hwh
+Generated Block Design Tcl file d:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_2/bd_0/hw_handoff/design_1_system_ila_0_2_bd.tcl
+Generated Hardware Definition File d:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_2/bd_0/synth/design_1_system_ila_0_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file d:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_system_ila_1_2/bd_0/hw_handoff/design_1_system_ila_1_2.hwh
+Generated Block Design Tcl file d:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_system_ila_1_2/bd_0/hw_handoff/design_1_system_ila_1_2_bd.tcl
+Generated Hardware Definition File d:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_system_ila_1_2/bd_0/synth/design_1_system_ila_1_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_1 .
+Exporting to file D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1851.324 ; gain = 86.898
+catch { config_ip_cache -export [get_ips -all design_1_Upsampling_Bayes_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_system_ila_0_2] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 9c6fd2f60aa25bc1; cache size = 125.780 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = 6b1e0cac19e84d1a; cache size = 125.780 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = 0ce52bd6632dcc9e; cache size = 125.780 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = 8d741099c6b7b707; cache size = 125.780 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_1, cache-ID = c609a7f063613590; cache size = 125.780 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 2145a513d991a7ce; cache size = 125.780 MB.
+catch { config_ip_cache -export [get_ips -all design_1_system_ila_1_2] }
+export_ip_user_files -of_objects [get_files D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 12 {design_1_Upsampling_Bayes_0_0_synth_1 design_1_system_ila_0_2_synth_1 design_1_system_ila_1_2_synth_1}
+[Wed May  4 16:35:05 2022] Launched design_1_Upsampling_Bayes_0_0_synth_1, design_1_system_ila_0_2_synth_1, design_1_system_ila_1_2_synth_1...
+Run output will be captured here:
+design_1_Upsampling_Bayes_0_0_synth_1: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_Upsampling_Bayes_0_0_synth_1/runme.log
+design_1_system_ila_0_2_synth_1: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_system_ila_0_2_synth_1/runme.log
+design_1_system_ila_1_2_synth_1: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_system_ila_1_2_synth_1/runme.log
+export_simulation -of_objects [get_files D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.ip_user_files/sim_scripts -ip_user_files_dir D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.ip_user_files -ipstatic_source_dir D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.cache/compile_simlib/modelsim} {questa=D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.cache/compile_simlib/questa} {riviera=D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.cache/compile_simlib/riviera} {activehdl=D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Wed May  4 16:37:10 2022] Launched design_1_system_ila_0_2_synth_1, design_1_system_ila_1_2_synth_1, synth_1...
+Run output will be captured here:
+design_1_system_ila_0_2_synth_1: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_system_ila_0_2_synth_1/runme.log
+design_1_system_ila_1_2_synth_1: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_system_ila_1_2_synth_1/runme.log
+synth_1: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/synth_1/runme.log
+[Wed May  4 16:37:10 2022] Launched impl_1...
+Run output will be captured here: D:/SISR/github/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/impl_1/runme.log
+write_hw_platform -fixed -force  -file D:/SISR/SUBsystem/vitis/dma2/dma2.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: D:/SISR/SUBsystem/vitis/dma2/dma2.xsa ...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Xlinx/vivado/2019.2/data\embeddedsw) loading 0 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: D:/SISR/SUBsystem/vitis/dma2/dma2.xsa
+write_hw_platform: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2241.398 ; gain = 0.000
+INFO: [Common 17-344] 'write_hw_platform' was cancelled
+write_hw_platform -fixed -force  -include_bit -file D:/SISR/SUBsystem/vitis/dma2/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: D:/SISR/SUBsystem/vitis/dma2/design_1_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: D:/SISR/SUBsystem/vitis/dma2/design_1_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2241.398 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  4 18:23:14 2022...
+=======
+=======
+>>>>>>> upstream/master
 Successfully read diagram <design_1> from BD file <E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/design_1.bd>
 open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1727.008 ; gain = 0.000
 exit
 INFO: [Common 17-206] Exiting Vivado at Wed May  4 21:29:33 2022...
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
