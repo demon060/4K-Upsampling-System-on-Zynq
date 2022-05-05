@@ -5,7 +5,7 @@ module Upsampling_Bayes_M00_AXIS #
        (
            // Users to add parameters here
            parameter PIXEL_WIDTH = 24,
-           parameter ROW_PIXEL_COUNT = 800,
+           parameter ROW_PIXEL_COUNT = 960,
            // User parameters ends
            // Do not modify the parameters beyond this line
 

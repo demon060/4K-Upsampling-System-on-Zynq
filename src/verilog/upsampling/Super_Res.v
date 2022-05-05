@@ -15,4 +15,4 @@ assign pixel_out = {4{pixel_in}};
 assign pout_en = pin_en;
 assign busy = stuck;
 
-endmodule 
+endmodule
