@@ -4,13 +4,13 @@
 
 即`Super_Res.v`
 
-### control 
+### control
 
 - data input
   - i_pixel_data[RGB_WIDTH*3]={r[RGB_WIDTH],g[RGB_WIDTH],b[RGB_WIDTH]}
 - data output
   - o_pixel_data[3*RGB_WIDTH]={r[RGB_WIDTH],g[RGB_WIDTH],b[RGB_WIDTH]}
-- state input 
+- state input
   - i_pixel_data_valid：外部告知模块输入数据有效
   - i_data_ready: 外部告知模块输出准备
 - state output
@@ -20,8 +20,6 @@
   - o_intr
 
 ## 2. bicubic
-
-
 
 ### 2.1. rgb2ycbcr
 
@@ -34,7 +32,6 @@
 - state
   - input_enable
   - output_enable
-
 
 流式，不缓存任何数据
 
@@ -68,14 +65,9 @@
   - i_wr_enable
   - i_rd_enable
 
-
 共5个三通道buffer：四输出，一输入。此控制交给顶层控制。
 
 停顿，考虑例化sram实现。
-
-
-
-
 
 ### 2.3. bicubic_core
 
@@ -90,10 +82,9 @@
   - y[8\*2\*2]
   - cb[8\*2\*2]
   - cr[8\*2\*2]
-- state 
-  - input_valid 
+- state
+  - input_valid
   - output_valid
-
 
 算出低分4\*4块中心对应的高分2\*2块
 
@@ -130,13 +121,7 @@
 流式，不缓存任何数据
 
 系数20位
-<<<<<<< HEAD
-> r = (1220945*(y-16) + 2115220*(cb-128))>>20;
-> g = (1220945*(y-16) - 410792*(cb-128)- 852459*(cr-128))>>20;
-> b = (1220945*(y-16) + 1673556*(cr-128))>>20;
 
-=======
 > r = (1220945\*(y-16) + 2115220\*(cb-128))>>20;
 > g = (1220945\*(y-16) - 410792\*(cb-128)- 852459\*(cr-128))>>20;
 > b = (1220945\*(y-16) + 1673556\*(cr-128))>>20;
->>>>>>> upstream/master
