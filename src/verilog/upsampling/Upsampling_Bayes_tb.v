@@ -19,7 +19,7 @@ wire [C_M00_AXIS_TDATA_WIDTH-1 : 0] m00_axis_tdata;
 wire  m00_axis_tlast;
 wire  m00_axis_tready;
 
-integer i=0;
+integer i=1;
 
 assign m00_axis_tready = 1;
 
@@ -35,8 +35,10 @@ end
 
 initial begin
             s00_axis_tlast = 0;
-    #300    s00_axis_tvalid = 1;
+    // 这里晚1ps非常关键
+    #201    s00_axis_tvalid = 1;
             s00_axis_tdata = 32'h33221100;
+            #100;
     while (i != 600) begin
     #100;
         if (s00_axis_tready) begin
@@ -48,9 +50,8 @@ initial begin
             s00_axis_tlast = 1;
     #100    s00_axis_tlast = 0;
             s00_axis_tvalid = 0;
-    // while (m00_axis_tdata == 32'hffeeddff) begin 
-    // end
-    i=0;
+
+    i = 1;
     #2000   s00_axis_tlast = 0;
     #300    s00_axis_tvalid = 1;
             s00_axis_tdata = 32'h33221100;
@@ -68,17 +69,6 @@ initial begin
     #2000;
     $stop;       
 end
-    // #100    s00_axis_tdata = 32'h77665544;
-    // #100    s00_axis_tdata = 32'hbbaa9988;
-    // #100    s00_axis_tdata = 32'hffeeddcc;
-    // #100    s00_axis_tdata = 32'h33221100;
-    // #100    s00_axis_tdata = 32'h77665544;
-    // #100    s00_axis_tdata = 32'hbbaa9988;
-    // #100    s00_axis_tdata = 32'hffeeddcc;
-    // #100    s00_axis_tdata = 32'hffeeddcc;
-    // #100    s00_axis_tdata = 32'hbbaa9988;
-    // #100    s00_axis_tdata = 32'h77665544;
-    // #100    s00_axis_tdata = 32'h33221100;
 
 Upsampling_Bayes #(
                      .PIXEL_WIDTH(24),

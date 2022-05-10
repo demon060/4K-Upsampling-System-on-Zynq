@@ -8,23 +8,18 @@ module AXIS_to_pixel_buffer #(
            input wire rst_n,
            input wire [AXIS_TDATA_WIDTH-1:0] data_in,
            output wire [PIXEL_WIDTH-1:0] pixel_out,
-           output wire stuck, // 堵塞，包括缓存满与输出端堵塞
-           output wire trans_eff, // 传输有效，高时同时刻数据有效
-           input wire buf_rden, // 读请求
-           input wire buf_wren // 写请求
+           output wire stuck, // 堵塞，1：缓存满或输出端堵塞
+           output wire trans_eff, // 传输有效，1：同时刻数据有效
+           input wire buf_rden, // 读请求，1:下游读
+           input wire buf_wren // 写请求，1：上游写
        );
-// function called clogb2 that returns an integer which has the
-// value of the ceiling of the log base 2.
-// function integer clogb2 (input integer bit_depth);
-//     begin
-//         for(clogb2=0; bit_depth>0; clogb2=clogb2+1)
-//             bit_depth = bit_depth >> 1;
-//     end
-// endfunction
-
+// 像素buffer，缓存了每个axis数据多出来的rgb值
 reg [PIXEL_WIDTH-1:0] buffer;
+// 状态机指示，也是buffer计数器，记录了buffer里面有多少rgb值
 reg [1:0] buffer_count;
+// 像素输出一级缓存，为了避免下游不读而上游已经撤回
 reg [PIXEL_WIDTH-1:0] pixel_out_reg;
+// 标记输出有效性
 reg trans_eff_reg;
 
 assign pixel_out = pixel_out_reg;
