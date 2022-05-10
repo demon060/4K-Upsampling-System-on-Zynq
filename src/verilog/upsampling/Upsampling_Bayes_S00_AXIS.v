@@ -51,9 +51,9 @@ localparam bit_num  = clogb2(NUMBER_OF_INPUT_WORDS-1);//4
 // Define the states of state machine
 // The control state machine oversees the writing of input streaming data to the FIFO,
 // and outputs the streaming data from the FIFO
-parameter [1:0] IDLE = 1'b0,        // This is the initial/idle state
-
-          WRITE_FIFO  = 1'b1; // In this state FIFO is written with the
+parameter [1:0]
+    IDLE = 1'b0,        // This is the initial/idle state
+    WRITE_FIFO  = 1'b1; // In this state FIFO is written with the
 // input stream data S_AXIS_TDATA
 wire  	axis_tready;
 // State variable
@@ -130,11 +130,10 @@ begin
     else begin
         if (fifo_wren || S_AXIS_TLAST)
         begin
-            // reads_done is asserted when NUMBER_OF_INPUT_WORDS numbers of streaming data
-            // has been written to the FIFO which is also marked by S_AXIS_TLAST(kept for optional usage).
             if (!fifo_full_flag) begin
                 write_pointer <= write_pointer + 1;
             end
+            // writes_done是用来停状态机的，看来像是延迟一回合的last信号，我忘了为什么要这么写，但是代码能跑起来先不管了
             if (S_AXIS_TLAST) begin
                 writes_done <= 1'b1;
             end else begin
@@ -146,10 +145,10 @@ end
 
 // FIFO write enable generation
 // fifo_wren为高的时候，才会允许读入改变write_pointer
-// -> pointer满了之后，write_done被拉�?
-// -> write_done被拉高，状�?�机进入IDLE
+// -> pointer满了之后，write_done被拉高
+// -> write_done被拉高，状态机进入IDLE
 // -> 但问题不大，只要主机还是S_AXIS_TVALID，状态机下一个周期还会进WRITE_FIFO
-// -> pointer如果还是满的，那�?么也不发�?
+// -> pointer如果还是满的，那什么也不发送
 assign fifo_wren = S_AXIS_TVALID && axis_tready;
 
 // FIFO Implementation
@@ -159,15 +158,14 @@ always @( posedge S_AXIS_ACLK )
 begin
     if (fifo_wren)// && S_AXIS_TSTRB[byte_index])
     begin
-        //这是�?个byte的fifo，具体几个byte由generate定义
+        //这是若干个byte的fifo，具体几个byte由generate定义
         stream_data_fifo[write_pointer[0 +: bit_num]] <= S_AXIS_TDATA;
     end
 end
 
 assign S_AXIS_get_data = stream_data_fifo[read_pointer[0 +: bit_num]];
 
-// Add user logic here
-// 定义fifo的空�?
+// 定义fifo的空满
 assign fifo_full_flag = (write_pointer - read_pointer == {1'b1,{(bit_num){1'b0}}});
 assign fifo_empty_flag = write_pointer == read_pointer;
 
@@ -181,7 +179,5 @@ always @(posedge S_AXIS_ACLK) begin
         end
     end
 end
-
-// User logic ends
 
 endmodule
