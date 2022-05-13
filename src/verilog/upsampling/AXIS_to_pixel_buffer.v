@@ -1,12 +1,12 @@
 `timescale 1 ns / 1 ps
 
-module AXIS_to_pixel_buffer #(
-           parameter AXIS_TDATA_WIDTH= 32,
+module S_AXIS_2_pixel_low #(
+           parameter C_S_AXIS_TDATA_WIDTH= 32,
            parameter PIXEL_WIDTH = 24
        )(
            input wire clk,
            input wire rst_n,
-           input wire [AXIS_TDATA_WIDTH-1:0] data_in,
+           input wire [C_S_AXIS_TDATA_WIDTH-1:0] data_in,
            output wire [PIXEL_WIDTH-1:0] pixel_out,
            output wire stuck, // 堵塞，1：缓存满或输出端堵塞
            output wire trans_eff, // 传输有效，1：同时刻数据有效
@@ -35,7 +35,7 @@ always @(posedge clk or negedge rst_n) begin
             0: begin
                 if (buf_rden && buf_wren) begin
                     pixel_out_reg <= data_in[0 +: PIXEL_WIDTH];
-                    buffer[0 +: 8] <= data_in[AXIS_TDATA_WIDTH-1 -: 8];
+                    buffer[0 +: 8] <= data_in[C_S_AXIS_TDATA_WIDTH-1 -: 8];
                     buffer_count <= buffer_count+1;
                     trans_eff_reg <= 1;
                 end
@@ -46,7 +46,7 @@ always @(posedge clk or negedge rst_n) begin
             1: begin
                 if (buf_rden && buf_wren) begin
                     pixel_out_reg <= {data_in[0 +: 2*8],buffer[0 +: 8]};
-                    buffer[0 +: 2*8] <= data_in[AXIS_TDATA_WIDTH-1 -: 2*8];
+                    buffer[0 +: 2*8] <= data_in[C_S_AXIS_TDATA_WIDTH-1 -: 2*8];
                     buffer_count <= buffer_count+1;
                     trans_eff_reg <= 1;
                 end
@@ -57,7 +57,7 @@ always @(posedge clk or negedge rst_n) begin
             2: begin
                 if (buf_rden && buf_wren) begin
                     pixel_out_reg <= {data_in[0 +: 8],buffer[0 +: 2*8]};
-                    buffer <= data_in[AXIS_TDATA_WIDTH-1 -: 3*8];
+                    buffer <= data_in[C_S_AXIS_TDATA_WIDTH-1 -: 3*8];
                     buffer_count <= buffer_count+1;
                     trans_eff_reg <= 1;
                 end
