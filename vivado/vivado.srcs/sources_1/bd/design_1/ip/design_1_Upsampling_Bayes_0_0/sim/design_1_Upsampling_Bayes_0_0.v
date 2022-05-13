@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:Upsampling_Bayes:1.0
-// IP Revision: 12
+// IP Revision: 14
 
 `timescale 1ns/1ps
 
@@ -105,20 +105,20 @@ input wire m00_axis_aresetn;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m00_axis TVALID" *)
 output wire m00_axis_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m00_axis TDATA" *)
-output wire [31 : 0] m00_axis_tdata;
+output wire [127 : 0] m00_axis_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m00_axis TSTRB" *)
-output wire [3 : 0] m00_axis_tstrb;
+output wire [15 : 0] m00_axis_tstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m00_axis TLAST" *)
 output wire m00_axis_tlast;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m00_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m00_axis, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m00_axis TREADY" *)
 input wire m00_axis_tready;
 
   Upsampling_Bayes #(
     .PIXEL_WIDTH(24),
     .C_S00_AXIS_TDATA_WIDTH(32),
-    .C_M00_AXIS_TDATA_WIDTH(32),
-    .C_M00_AXIS_START_COUNT(32)
+    .C_M00_AXIS_TDATA_WIDTH(128),
+    .C_M00_AXIS_START_COUNT(16)
   ) inst (
     .clk(clk),
     .rst_n(rst_n),

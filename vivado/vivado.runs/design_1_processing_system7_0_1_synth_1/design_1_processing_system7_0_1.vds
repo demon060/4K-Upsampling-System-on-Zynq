@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Apr 12 15:00:39 2022
-# Process ID: 18912
+# Start of session at: Fri May 13 20:48:20 2022
+# Process ID: 2560
 # Current directory: E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_processing_system7_0_1_synth_1
 # Command line: vivado.exe -log design_1_processing_system7_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_processing_system7_0_1.tcl
 # Log file: E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_processing_system7_0_1_synth_1/design_1_processing_system7_0_1.vds
@@ -11,9 +11,8 @@
 #-----------------------------------------------------------
 source design_1_processing_system7_0_1.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/Code/4K-Upsampling-System-on-Zynq/ip_repo/Upsampling_Bayes_1.0'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
 Command: synth_design -top design_1_processing_system7_0_1 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
@@ -21,9 +20,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17828 
+INFO: Helper process launched with PID 10980 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 988.742 ; gain = 234.473
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 987.805 ; gain = 234.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [e:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:60]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [e:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
@@ -174,7 +173,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[1]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1068.320 ; gain = 314.051
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1068.590 ; gain = 314.941
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -187,12 +186,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1068.320 ; gain = 314.051
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1068.590 ; gain = 314.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1068.320 ; gain = 314.051
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1068.590 ; gain = 314.941
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1068.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1068.590 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -205,30 +204,30 @@ Parsing XDC File [E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design
 Finished Parsing XDC File [E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_processing_system7_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1090.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1091.207 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1093.832 ; gain = 2.980
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1094.219 ; gain = 3.012
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1093.832 ; gain = 339.562
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1094.219 ; gain = 340.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1093.832 ; gain = 339.562
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1094.219 ; gain = 340.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_processing_system7_0_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1093.832 ; gain = 339.562
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1094.219 ; gain = 340.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1093.832 ; gain = 339.562
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1094.219 ; gain = 340.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -286,7 +285,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1093.832 ; gain = 339.562
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1094.219 ; gain = 340.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -298,13 +297,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1276.832 ; gain = 522.562
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1279.551 ; gain = 525.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1296.574 ; gain = 542.305
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1299.711 ; gain = 546.062
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -316,7 +315,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1301.707 ; gain = 547.438
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1305.074 ; gain = 551.426
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -340,13 +339,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1316.543 ; gain = 562.273
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1318.871 ; gain = 565.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1316.543 ; gain = 562.273
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1318.871 ; gain = 565.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -365,25 +364,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1316.543 ; gain = 562.273
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1318.871 ; gain = 565.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1316.543 ; gain = 562.273
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1318.871 ; gain = 565.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1316.543 ; gain = 562.273
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1318.871 ; gain = 565.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1316.543 ; gain = 562.273
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1318.871 ; gain = 565.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -413,32 +412,32 @@ Report Instance Areas:
 |2     |  inst   |processing_system7_v5_5_processing_system7 |   245|
 +------+---------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1316.543 ; gain = 562.273
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1318.871 ; gain = 565.223
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1316.543 ; gain = 536.762
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1316.543 ; gain = 562.273
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:46 . Memory (MB): peak = 1318.871 ; gain = 539.594
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1318.871 ; gain = 565.223
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1316.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1318.871 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1337.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1341.867 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-26 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+27 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1337.008 ; gain = 879.297
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1337.008 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1341.867 ; gain = 884.582
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1341.867 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_processing_system7_0_1_synth_1/design_1_processing_system7_0_1.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_processing_system7_0_1, cache-ID = 1eb3ecd23d111911
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1337.008 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_processing_system7_0_1, cache-ID = 26116383ed026c2a
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1341.867 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.runs/design_1_processing_system7_0_1_synth_1/design_1_processing_system7_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_processing_system7_0_1_utilization_synth.rpt -pb design_1_processing_system7_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 12 15:01:21 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri May 13 20:49:36 2022...

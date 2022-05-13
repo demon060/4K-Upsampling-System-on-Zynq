@@ -5028,11 +5028,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 12 06:28:04 UTC 2022</spirit:value>
+            <spirit:value>Fri May 13 12:11:05 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5a98b9c3</spirit:value>
+            <spirit:value>9:eb7304c8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5046,11 +5046,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 13 06:25:30 UTC 2022</spirit:value>
+            <spirit:value>Fri May 13 12:47:39 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5a98b9c3</spirit:value>
+            <spirit:value>9:eb7304c8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5066,11 +5066,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 13 06:25:30 UTC 2022</spirit:value>
+            <spirit:value>Fri May 13 12:47:39 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5a98b9c3</spirit:value>
+            <spirit:value>9:eb7304c8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5107,11 +5107,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 12 06:28:04 UTC 2022</spirit:value>
+            <spirit:value>Fri May 13 12:11:05 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5a9b62f9</spirit:value>
+            <spirit:value>9:90cdd464</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5127,11 +5127,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 13 06:25:30 UTC 2022</spirit:value>
+            <spirit:value>Fri May 13 12:47:39 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5a9b62f9</spirit:value>
+            <spirit:value>9:90cdd464</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5145,11 +5145,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 13 06:26:48 UTC 2022</spirit:value>
+            <spirit:value>Fri May 13 12:50:39 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5a98b9c3</spirit:value>
+            <spirit:value>9:eb7304c8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -8855,7 +8855,7 @@ Note: This value must be greater than or equal to the largest expected packet to
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_S2MM.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_S2MM.LAYERED_METADATA" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_S2MM.PHASE" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_S2MM.TDATA_NUM_BYTES" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_S2MM.TDATA_NUM_BYTES" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_S2MM.TDEST_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_S2MM.TID_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_S2MM.TUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>

@@ -32,8 +32,8 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
 set_property ip_repo_paths {
-  e:/Code/4K-Upsampling-System-on-Zynq/ip_repo/Upsampling_Bayes_1.0
   e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo
+  e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo e:/Code/4K-Upsampling-System-on-Zynq/vivado/vivado.cache/ip [current_project]

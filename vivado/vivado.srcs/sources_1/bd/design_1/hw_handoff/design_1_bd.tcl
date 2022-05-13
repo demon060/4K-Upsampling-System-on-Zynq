@@ -171,13 +171,18 @@ proc create_root_design { parentCell } {
   # Create instance: Upsampling_Bayes_0, and set properties
   set Upsampling_Bayes_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Upsampling_Bayes:1.0 Upsampling_Bayes_0 ]
   set_property -dict [ list \
-   CONFIG.C_M00_AXIS_START_COUNT {32} \
+   CONFIG.C_M00_AXIS_START_COUNT {16} \
+   CONFIG.C_M00_AXIS_TDATA_WIDTH {128} \
  ] $Upsampling_Bayes_0
 
   # Create instance: axi_dma_0, and set properties
   set axi_dma_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0 ]
   set_property -dict [ list \
    CONFIG.c_include_sg {0} \
+   CONFIG.c_m_axi_mm2s_data_width {32} \
+   CONFIG.c_m_axis_mm2s_tdata_width {32} \
+   CONFIG.c_mm2s_burst_size {16} \
+   CONFIG.c_s_axis_s2mm_tdata_width {128} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
  ] $axi_dma_0
 
@@ -207,7 +212,8 @@ proc create_root_design { parentCell } {
   # Create instance: axis_data_fifo_1, and set properties
   set axis_data_fifo_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_1 ]
   set_property -dict [ list \
-   CONFIG.FIFO_DEPTH {4096} \
+   CONFIG.FIFO_DEPTH {1024} \
+   CONFIG.TDATA_NUM_BYTES {16} \
  ] $axis_data_fifo_1
 
   # Create instance: processing_system7_0, and set properties
@@ -782,8 +788,8 @@ connect_bd_intf_net -intf_net [get_bd_intf_nets Upsampling_Bayes_0_m00_axis1] [g
   connect_bd_intf_net -intf_net axi_mem_intercon_M00_AXI [get_bd_intf_pins axi_mem_intercon/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
 connect_bd_intf_net -intf_net [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_intf_pins axi_mem_intercon/M00_AXI] [get_bd_intf_pins system_ila_1/SLOT_0_AXI]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets axi_mem_intercon_M00_AXI]
+  connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_MM2S [get_bd_intf_pins axi_mem_intercon/S00_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S]
   connect_bd_intf_net -intf_net axi_vdma_1_M_AXIS_MM2S [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
-  connect_bd_intf_net -intf_net axi_vdma_1_M_AXI_MM2S [get_bd_intf_pins axi_mem_intercon/S00_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S]
   connect_bd_intf_net -intf_net axis_data_fifo_0_M_AXIS [get_bd_intf_pins Upsampling_Bayes_0/s00_axis] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
 connect_bd_intf_net -intf_net [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins system_ila_0/SLOT_0_AXIS]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets axis_data_fifo_0_M_AXIS]

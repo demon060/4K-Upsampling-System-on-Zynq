@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF4875AB762716891",
+      "boundary_crc": "0x264322021B3F3B41",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_378d",
@@ -78,7 +78,7 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "TDATA_NUM_BYTES": {
-            "value": "4",
+            "value": "16",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
@@ -136,7 +136,7 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "TDATA_NUM_BYTES": {
-            "value": "4",
+            "value": "16",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
@@ -279,13 +279,13 @@
             "value": "0"
           },
           "C_PROBE10_WIDTH": {
-            "value": "32"
+            "value": "128"
           },
           "C_PROBE11_TYPE": {
             "value": "0"
           },
           "C_PROBE11_WIDTH": {
-            "value": "4"
+            "value": "16"
           },
           "C_PROBE12_TYPE": {
             "value": "0"
@@ -333,13 +333,13 @@
             "value": "0"
           },
           "C_PROBE5_WIDTH": {
-            "value": "32"
+            "value": "128"
           },
           "C_PROBE6_TYPE": {
             "value": "0"
           },
           "C_PROBE6_WIDTH": {
-            "value": "4"
+            "value": "16"
           },
           "C_PROBE7_TYPE": {
             "value": "0"
@@ -414,7 +414,7 @@
             "value": "FT"
           },
           "C_SLOT_1_AXIS_TDATA_WIDTH": {
-            "value": "32"
+            "value": "128"
           },
           "C_SLOT_1_AXIS_TDEST_WIDTH": {
             "value": "0"
@@ -441,7 +441,7 @@
             "value": "FT"
           },
           "C_SLOT_2_AXIS_TDATA_WIDTH": {
-            "value": "32"
+            "value": "128"
           },
           "C_SLOT_2_AXIS_TDEST_WIDTH": {
             "value": "0"

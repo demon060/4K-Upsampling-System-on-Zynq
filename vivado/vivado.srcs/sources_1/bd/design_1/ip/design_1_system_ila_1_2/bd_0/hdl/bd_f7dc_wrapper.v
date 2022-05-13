@@ -9,7 +9,6 @@
 module bd_f7dc_wrapper
    (SLOT_0_AXI_araddr,
     SLOT_0_AXI_arcache,
-    SLOT_0_AXI_arid,
     SLOT_0_AXI_arlen,
     SLOT_0_AXI_arprot,
     SLOT_0_AXI_arready,
@@ -17,24 +16,20 @@ module bd_f7dc_wrapper
     SLOT_0_AXI_arvalid,
     SLOT_0_AXI_awaddr,
     SLOT_0_AXI_awcache,
-    SLOT_0_AXI_awid,
     SLOT_0_AXI_awlen,
     SLOT_0_AXI_awprot,
     SLOT_0_AXI_awready,
     SLOT_0_AXI_awsize,
     SLOT_0_AXI_awvalid,
-    SLOT_0_AXI_bid,
     SLOT_0_AXI_bready,
     SLOT_0_AXI_bresp,
     SLOT_0_AXI_bvalid,
     SLOT_0_AXI_rdata,
-    SLOT_0_AXI_rid,
     SLOT_0_AXI_rlast,
     SLOT_0_AXI_rready,
     SLOT_0_AXI_rresp,
     SLOT_0_AXI_rvalid,
     SLOT_0_AXI_wdata,
-    SLOT_0_AXI_wid,
     SLOT_0_AXI_wlast,
     SLOT_0_AXI_wready,
     SLOT_0_AXI_wstrb,
@@ -43,7 +38,6 @@ module bd_f7dc_wrapper
     resetn);
   input [31:0]SLOT_0_AXI_araddr;
   input [3:0]SLOT_0_AXI_arcache;
-  input [1:0]SLOT_0_AXI_arid;
   input [3:0]SLOT_0_AXI_arlen;
   input [2:0]SLOT_0_AXI_arprot;
   input SLOT_0_AXI_arready;
@@ -51,24 +45,20 @@ module bd_f7dc_wrapper
   input SLOT_0_AXI_arvalid;
   input [31:0]SLOT_0_AXI_awaddr;
   input [3:0]SLOT_0_AXI_awcache;
-  input [1:0]SLOT_0_AXI_awid;
   input [3:0]SLOT_0_AXI_awlen;
   input [2:0]SLOT_0_AXI_awprot;
   input SLOT_0_AXI_awready;
   input [2:0]SLOT_0_AXI_awsize;
   input SLOT_0_AXI_awvalid;
-  input [1:0]SLOT_0_AXI_bid;
   input SLOT_0_AXI_bready;
   input [1:0]SLOT_0_AXI_bresp;
   input SLOT_0_AXI_bvalid;
   input [63:0]SLOT_0_AXI_rdata;
-  input [1:0]SLOT_0_AXI_rid;
   input SLOT_0_AXI_rlast;
   input SLOT_0_AXI_rready;
   input [1:0]SLOT_0_AXI_rresp;
   input SLOT_0_AXI_rvalid;
   input [63:0]SLOT_0_AXI_wdata;
-  input [1:0]SLOT_0_AXI_wid;
   input SLOT_0_AXI_wlast;
   input SLOT_0_AXI_wready;
   input [7:0]SLOT_0_AXI_wstrb;
@@ -78,7 +68,6 @@ module bd_f7dc_wrapper
 
   wire [31:0]SLOT_0_AXI_araddr;
   wire [3:0]SLOT_0_AXI_arcache;
-  wire [1:0]SLOT_0_AXI_arid;
   wire [3:0]SLOT_0_AXI_arlen;
   wire [2:0]SLOT_0_AXI_arprot;
   wire SLOT_0_AXI_arready;
@@ -86,24 +75,20 @@ module bd_f7dc_wrapper
   wire SLOT_0_AXI_arvalid;
   wire [31:0]SLOT_0_AXI_awaddr;
   wire [3:0]SLOT_0_AXI_awcache;
-  wire [1:0]SLOT_0_AXI_awid;
   wire [3:0]SLOT_0_AXI_awlen;
   wire [2:0]SLOT_0_AXI_awprot;
   wire SLOT_0_AXI_awready;
   wire [2:0]SLOT_0_AXI_awsize;
   wire SLOT_0_AXI_awvalid;
-  wire [1:0]SLOT_0_AXI_bid;
   wire SLOT_0_AXI_bready;
   wire [1:0]SLOT_0_AXI_bresp;
   wire SLOT_0_AXI_bvalid;
   wire [63:0]SLOT_0_AXI_rdata;
-  wire [1:0]SLOT_0_AXI_rid;
   wire SLOT_0_AXI_rlast;
   wire SLOT_0_AXI_rready;
   wire [1:0]SLOT_0_AXI_rresp;
   wire SLOT_0_AXI_rvalid;
   wire [63:0]SLOT_0_AXI_wdata;
-  wire [1:0]SLOT_0_AXI_wid;
   wire SLOT_0_AXI_wlast;
   wire SLOT_0_AXI_wready;
   wire [7:0]SLOT_0_AXI_wstrb;
@@ -114,7 +99,6 @@ module bd_f7dc_wrapper
   bd_f7dc bd_f7dc_i
        (.SLOT_0_AXI_araddr(SLOT_0_AXI_araddr),
         .SLOT_0_AXI_arcache(SLOT_0_AXI_arcache),
-        .SLOT_0_AXI_arid(SLOT_0_AXI_arid),
         .SLOT_0_AXI_arlen(SLOT_0_AXI_arlen),
         .SLOT_0_AXI_arprot(SLOT_0_AXI_arprot),
         .SLOT_0_AXI_arready(SLOT_0_AXI_arready),
@@ -122,24 +106,20 @@ module bd_f7dc_wrapper
         .SLOT_0_AXI_arvalid(SLOT_0_AXI_arvalid),
         .SLOT_0_AXI_awaddr(SLOT_0_AXI_awaddr),
         .SLOT_0_AXI_awcache(SLOT_0_AXI_awcache),
-        .SLOT_0_AXI_awid(SLOT_0_AXI_awid),
         .SLOT_0_AXI_awlen(SLOT_0_AXI_awlen),
         .SLOT_0_AXI_awprot(SLOT_0_AXI_awprot),
         .SLOT_0_AXI_awready(SLOT_0_AXI_awready),
         .SLOT_0_AXI_awsize(SLOT_0_AXI_awsize),
         .SLOT_0_AXI_awvalid(SLOT_0_AXI_awvalid),
-        .SLOT_0_AXI_bid(SLOT_0_AXI_bid),
         .SLOT_0_AXI_bready(SLOT_0_AXI_bready),
         .SLOT_0_AXI_bresp(SLOT_0_AXI_bresp),
         .SLOT_0_AXI_bvalid(SLOT_0_AXI_bvalid),
         .SLOT_0_AXI_rdata(SLOT_0_AXI_rdata),
-        .SLOT_0_AXI_rid(SLOT_0_AXI_rid),
         .SLOT_0_AXI_rlast(SLOT_0_AXI_rlast),
         .SLOT_0_AXI_rready(SLOT_0_AXI_rready),
         .SLOT_0_AXI_rresp(SLOT_0_AXI_rresp),
         .SLOT_0_AXI_rvalid(SLOT_0_AXI_rvalid),
         .SLOT_0_AXI_wdata(SLOT_0_AXI_wdata),
-        .SLOT_0_AXI_wid(SLOT_0_AXI_wid),
         .SLOT_0_AXI_wlast(SLOT_0_AXI_wlast),
         .SLOT_0_AXI_wready(SLOT_0_AXI_wready),
         .SLOT_0_AXI_wstrb(SLOT_0_AXI_wstrb),

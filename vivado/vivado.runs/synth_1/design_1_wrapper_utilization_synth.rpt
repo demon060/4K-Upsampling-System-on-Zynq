@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed May  4 16:41:54 2022
-| Host         : DESKTOP-CKC5QTJ running 64-bit major release  (build 9200)
+| Date         : Fri May 13 20:52:58 2022
+| Host         : DESKTOP-9HE5DLC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : 7z020clg400-1
@@ -158,7 +158,7 @@ Table of Contents
 +---------------------------------+------+
 |             Ref Name            | Used |
 +---------------------------------+------+
-| design_1_xbar_3                 |    1 |
+| design_1_xbar_4                 |    1 |
 | design_1_xbar_1                 |    1 |
 | design_1_v_tc_0_0               |    1 |
 | design_1_v_axi4s_vid_out_0_0    |    1 |
@@ -172,12 +172,13 @@ Table of Contents
 | design_1_axi_vdma_1_0           |    1 |
 | design_1_axi_dynclk_0_0         |    1 |
 | design_1_axi_dma_0_0            |    1 |
-| design_1_auto_us_1              |    1 |
-| design_1_auto_us_0              |    1 |
-| design_1_auto_pc_1              |    1 |
-| design_1_auto_pc_0              |    1 |
-| design_1_auto_cc_1              |    1 |
-| design_1_auto_cc_0              |    1 |
+| design_1_auto_us_3              |    1 |
+| design_1_auto_us_2              |    1 |
+| design_1_auto_pc_3              |    1 |
+| design_1_auto_pc_2              |    1 |
+| design_1_auto_ds_1              |    1 |
+| design_1_auto_cc_3              |    1 |
+| design_1_auto_cc_2              |    1 |
 | design_1_Upsampling_Bayes_0_0   |    1 |
 +---------------------------------+------+
 

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/SISR/github/4K-Upsampling-System-on-Zynq/src/constrain/upsampling.xdc rfile:../../../../src/constrain/upsampling.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/Code/4K-Upsampling-System-on-Zynq/src/constrain/upsampling.xdc rfile:../../../../src/constrain/upsampling.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:87 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS33} [get_ports hdmi_oen]
 set_property src_info {type:XDC file:1 line:88 export:INPUT save:INPUT read:READ} [current_design]
