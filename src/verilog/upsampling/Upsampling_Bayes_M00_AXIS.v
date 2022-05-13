@@ -17,7 +17,7 @@ module Upsampling_Bayes_M00_AXIS #
        (
            // Users to add ports here
            input wire [C_M_AXIS_TDATA_WIDTH-1:0] M_AXIS_send_data,
-           input wire wrrq, //write request
+           input wire wren, //write request
            output wire stuck,
            // User ports ends
            // Do not modify the ports beyond this line
@@ -154,8 +154,8 @@ end
 //tvalid generation
 //axis_tvalid is asserted when the control state machine's state is SEND_STREAM and
 //number of output streaming data is less than the WORD_OF_OUTPUT_BUFFER.
-assign axis_tvalid = (mst_exec_state == SEND_STREAM) && wrrq;
-assign stuck = M_AXIS_TREADY;
+assign axis_tvalid = (mst_exec_state == SEND_STREAM) && wren;
+assign stuck = !tx_en;
 //均准备好允许传输
 assign tx_en = M_AXIS_TREADY && axis_tvalid;
 

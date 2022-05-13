@@ -3,8 +3,8 @@
 module Upsampling_Bayes_tb # (
            parameter PIXEL_WIDTH = 24,
            parameter integer C_S00_AXIS_TDATA_WIDTH	= 32,
-           parameter integer C_M00_AXIS_TDATA_WIDTH	= 32,
-           parameter integer C_M00_AXIS_START_COUNT	= 32
+           parameter integer C_M00_AXIS_TDATA_WIDTH	= 128,
+           parameter integer C_M00_AXIS_START_COUNT	= 16
        );
 
 reg clk;
@@ -71,10 +71,10 @@ initial begin
 end
 
 Upsampling_Bayes #(
-                     .PIXEL_WIDTH(24),
-                     .C_S00_AXIS_TDATA_WIDTH	(32),
-                     .C_M00_AXIS_TDATA_WIDTH	(32),
-                     .C_M00_AXIS_START_COUNT	(16)
+                     .PIXEL_WIDTH(PIXEL_WIDTH),
+                     .C_S00_AXIS_TDATA_WIDTH	(C_S00_AXIS_TDATA_WIDTH),
+                     .C_M00_AXIS_TDATA_WIDTH	(C_M00_AXIS_TDATA_WIDTH),
+                     .C_M00_AXIS_START_COUNT	(C_M00_AXIS_START_COUNT)
                  ) Upsampling_Bayes_test (
                      .clk(clk),
                      .rst_n(rst_n),

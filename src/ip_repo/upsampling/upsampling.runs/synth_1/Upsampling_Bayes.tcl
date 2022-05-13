@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,10 +34,11 @@ update_ip_catalog
 set_property ip_output_repo e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v
+  E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v
   E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v
   E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v
   E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v
+  E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v
   E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being

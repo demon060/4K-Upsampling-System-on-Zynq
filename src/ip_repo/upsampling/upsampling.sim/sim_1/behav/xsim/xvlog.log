@@ -1,13 +1,20 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AXIS_to_pixel_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Super_Res
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
-INFO: [VRFC 10-2458] undeclared symbol m_axis_full, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:89]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:90]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:103]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:117]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:119]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb

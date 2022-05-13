@@ -17,24 +17,23 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19476 
+INFO: Helper process launched with PID 19612 
 WARNING: [Synth 8-2507] parameter declaration becomes local in Upsampling_Bayes_S00_AXIS with formal parameter declaration list [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v:56]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 695.914 ; gain = 244.273
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 697.375 ; gain = 245.809
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Upsampling_Bayes' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:3]
 	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 16 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:46]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:48]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:50]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:52]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:54]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:56]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:58]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:60]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:47]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:49]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:51]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:53]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:55]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:57]
 INFO: [Synth 8-6157] synthesizing module 'Upsampling_Bayes_S00_AXIS' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v:4]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter NUMBER_OF_INPUT_WORDS bound to: 8 - type: integer 
@@ -42,34 +41,44 @@ INFO: [Synth 8-6157] synthesizing module 'Upsampling_Bayes_S00_AXIS' [E:/Code/4K
 	Parameter IDLE bound to: 2'b00 
 	Parameter WRITE_FIFO bound to: 2'b01 
 INFO: [Synth 8-6155] done synthesizing module 'Upsampling_Bayes_S00_AXIS' (1#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v:4]
-INFO: [Synth 8-6157] synthesizing module 'Upsampling_Bayes_M00_AXIS' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Upsampling_Bayes_M00_AXIS' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:3]
 	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
-	Parameter ROW_PIXEL_COUNT bound to: 960 - type: integer 
-	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter ROW_PIXEL_COUNT bound to: 800 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M_START_COUNT bound to: 16 - type: integer 
-	Parameter NUMBER_OF_OUTPUT_WORDS bound to: 3 - type: integer 
+	Parameter WORD_OF_OUTPUT_BUFFER bound to: 3 - type: integer 
 	Parameter WAIT_COUNT_BITS bound to: 4 - type: integer 
-	Parameter ROW_PIXEL_COUNT_BITS bound to: 10 - type: integer 
+	Parameter ROW_SEND_COUNT bound to: 600 - type: integer 
+	Parameter ROW_SEND_COUNT_BITS bound to: 10 - type: integer 
 	Parameter bit_num bound to: 2 - type: integer 
 	Parameter IDLE bound to: 2'b00 
 	Parameter INIT_COUNTER bound to: 2'b01 
 	Parameter SEND_STREAM bound to: 2'b10 
 INFO: [Synth 8-155] case statement is not full and has no default [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:113]
-INFO: [Synth 8-6155] done synthesizing module 'Upsampling_Bayes_M00_AXIS' (2#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:4]
-INFO: [Synth 8-6157] synthesizing module 'AXIS_to_pixel_buffer' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:3]
-	Parameter AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Upsampling_Bayes_M00_AXIS' (2#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v:3]
+INFO: [Synth 8-6157] synthesizing module 'S_AXIS_2_pixel_low' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v:3]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
-WARNING: [Synth 8-5788] Register pixel_out_reg_reg in module AXIS_to_pixel_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:25]
-WARNING: [Synth 8-5788] Register buffer_reg in module AXIS_to_pixel_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'AXIS_to_pixel_buffer' (3#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v:3]
+WARNING: [Synth 8-5788] Register pixel_out_reg_reg in module S_AXIS_2_pixel_low is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v:25]
+WARNING: [Synth 8-5788] Register buffer_reg in module S_AXIS_2_pixel_low is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'S_AXIS_2_pixel_low' (3#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Super_Res' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v:1]
 	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'Super_Res' (4#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v:1]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Upsampling_Bayes_S00_AXIS_inst'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:65]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'AXIS_to_pixel_buffer_0'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:101]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Super_Res_0'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:114]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Upsampling_Bayes_M00_AXIS_inst'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:83]
-INFO: [Synth 8-6155] done synthesizing module 'Upsampling_Bayes' (5#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_high_2_M_AXIS' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v:3]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
+	Parameter PIXEL_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v:34]
+WARNING: [Synth 8-5788] Register data_out_reg_reg in module pixel_high_2_M_AXIS is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v:25]
+WARNING: [Synth 8-5788] Register buffer_reg in module pixel_high_2_M_AXIS is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_high_2_M_AXIS' (5#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v:3]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Upsampling_Bayes_S00_AXIS_inst'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:62]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'S_AXIS_2_pixel_low_0'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:98]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pixel_high_2_M_AXIS_0'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:125]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Upsampling_Bayes_M00_AXIS_inst'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:80]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Super_Res_0'. This will prevent further optimization [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'Upsampling_Bayes' (6#1) [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:3]
+WARNING: [Synth 8-3331] design pixel_high_2_M_AXIS has unconnected port pixel_in[96]
 WARNING: [Synth 8-3331] design Super_Res has unconnected port clk
 WARNING: [Synth 8-3331] design Super_Res has unconnected port rst_n
 WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
@@ -77,21 +86,22 @@ WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_
 WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
 WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 743.199 ; gain = 291.559
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 744.707 ; gain = 293.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 743.199 ; gain = 291.559
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 744.707 ; gain = 293.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 743.199 ; gain = 291.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 744.707 ; gain = 293.141
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'Upsampling_Bayes_M00_AXIS'
-INFO: [Synth 8-802] inferred FSM for state register 'buffer_count_reg' in module 'AXIS_to_pixel_buffer'
+INFO: [Synth 8-802] inferred FSM for state register 'buffer_count_reg' in module 'S_AXIS_2_pixel_low'
+INFO: [Synth 8-802] inferred FSM for state register 'buffer_count_reg' in module 'pixel_high_2_M_AXIS'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -108,9 +118,18 @@ INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using 
                  iSTATE0 |                               10 |                               10
                  iSTATE2 |                               11 |                               11
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'buffer_count_reg' using encoding 'sequential' in module 'AXIS_to_pixel_buffer'
+INFO: [Synth 8-3354] encoded FSM with state register 'buffer_count_reg' using encoding 'sequential' in module 'S_AXIS_2_pixel_low'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE2 |                               01 |                               11
+                 iSTATE0 |                               10 |                               10
+                  iSTATE |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'buffer_count_reg' using encoding 'sequential' in module 'pixel_high_2_M_AXIS'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 743.199 ; gain = 291.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 744.707 ; gain = 293.141
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -127,27 +146,28 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 3     
 	   3 Input      4 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 7     
+	              128 Bit    Registers := 2     
+	               64 Bit    Registers := 1     
 	               24 Bit    Registers := 2     
 	               10 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
-	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---RAMs : 
 	              256 Bit         RAMs := 1     
 +---Muxes : 
-	   3 Input     32 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 1     
+	   4 Input    128 Bit        Muxes := 2     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 2     
 	   2 Input     24 Bit        Muxes := 1     
 	   4 Input     24 Bit        Muxes := 3     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 8     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 17    
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
 	   3 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -172,21 +192,17 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     10 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 7     
+	              128 Bit    Registers := 1     
 	               10 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   3 Input     32 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 7     
-	   2 Input      1 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 2     
-Module AXIS_to_pixel_buffer 
+Module S_AXIS_2_pixel_low 
 Detailed RTL Component Info : 
 +---Registers : 
 	               24 Bit    Registers := 2     
@@ -197,6 +213,21 @@ Detailed RTL Component Info :
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+Module pixel_high_2_M_AXIS 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 2     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
 	   4 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -215,14 +246,16 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design pixel_high_2_M_AXIS has unconnected port pixel_in[96]
 WARNING: [Synth 8-3331] design Super_Res has unconnected port clk
 WARNING: [Synth 8-3331] design Super_Res has unconnected port rst_n
 WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
 WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[2]
 WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
 WARNING: [Synth 8-3331] design Upsampling_Bayes_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
+INFO: [Synth 8-3886] merging instance 'Upsampling_Bayes_M00_AXIS_inst/tx_done_reg' (FDR) to 'Upsampling_Bayes_M00_AXIS_inst/axis_tlast_delay_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 940.473 ; gain = 488.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 944.684 ; gain = 493.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -250,7 +283,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 945.812 ; gain = 494.172
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 949.055 ; gain = 497.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -276,7 +309,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 946.035 ; gain = 494.395
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 949.242 ; gain = 497.676
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -299,14 +332,15 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin sr_busy_inferred:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -325,25 +359,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -360,53 +394,53 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     3|
-|2     |LUT1   |   107|
-|3     |LUT2   |     9|
-|4     |LUT3   |    15|
-|5     |LUT4   |    25|
-|6     |LUT5   |    91|
-|7     |LUT6   |    25|
-|8     |MUXF7  |    32|
-|9     |RAM32M |     6|
-|10    |FDCE   |     3|
-|11    |FDRE   |   306|
-|12    |IBUF   |    41|
-|13    |OBUF   |    39|
+|2     |LUT1   |   109|
+|3     |LUT2   |     6|
+|4     |LUT3   |    79|
+|5     |LUT4   |    24|
+|6     |LUT5   |   129|
+|7     |LUT6   |    20|
+|8     |RAM32M |     6|
+|9     |FDCE   |     6|
+|10    |FDRE   |   396|
+|11    |IBUF   |    41|
+|12    |OBUF   |   147|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------------------------------+--------------------------+------+
 |      |Instance                         |Module                    |Cells |
 +------+---------------------------------+--------------------------+------+
-|1     |top                              |                          |   702|
+|1     |top                              |                          |   966|
 |2     |  Upsampling_Bayes_S00_AXIS_inst |Upsampling_Bayes_S00_AXIS |    34|
-|3     |  Upsampling_Bayes_M00_AXIS_inst |Upsampling_Bayes_M00_AXIS |   385|
-|4     |  AXIS_to_pixel_buffer_0         |AXIS_to_pixel_buffer      |   100|
+|3     |  Upsampling_Bayes_M00_AXIS_inst |Upsampling_Bayes_M00_AXIS |   175|
+|4     |  S_AXIS_2_pixel_low_0           |S_AXIS_2_pixel_low        |   100|
+|5     |  pixel_high_2_M_AXIS_0          |pixel_high_2_M_AXIS       |   365|
 +------+---------------------------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 946.816 ; gain = 495.176
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 949.242 ; gain = 497.676
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 958.973 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 961.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1060.469 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1063.203 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-39 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+45 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1060.469 ; gain = 616.016
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1060.469 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1063.203 ; gain = 618.781
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1063.203 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/synth_1/Upsampling_Bayes.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Upsampling_Bayes_utilization_synth.rpt -pb Upsampling_Bayes_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue May 10 13:16:40 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri May 13 14:48:15 2022...

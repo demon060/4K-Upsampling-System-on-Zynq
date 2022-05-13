@@ -2,92 +2,801 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue May 10 15:57:44 2022
-# Process ID: 12060
+# Start of session at: Fri May 13 12:34:38 2022
+# Process ID: 8164
 # Current directory: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4260 E:\Code\4K-Upsampling-System-on-Zynq\src\ip_repo\upsampling\upsampling.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11416 E:\Code\4K-Upsampling-System-on-Zynq\src\ip_repo\upsampling\upsampling.xpr
 # Log file: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/vivado.log
 # Journal file: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 899.457 ; gain = 241.945
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 914.934 ; gain = 252.594
 update_compile_order -fileset sources_1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_964_12 -dir e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip
-set_property -dict [list CONFIG.Component_Name {blk_mem_gen_964_12} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {964} CONFIG.Read_Width_A {12} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_964_12]
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_mem_gen_964_12' to 'blk_mem_gen_964_12' is not allowed and is ignored.
-generate_target {instantiation_template} [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_964_12/blk_mem_gen_964_12.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_964_12'...
-generate_target all [get_files  e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_964_12/blk_mem_gen_964_12.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_964_12'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_964_12'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_964_12'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_964_12'...
-catch { config_ip_cache -export [get_ips -all blk_mem_gen_964_12] }
-export_ip_user_files -of_objects [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_964_12/blk_mem_gen_964_12.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_964_12/blk_mem_gen_964_12.xci]
-launch_runs -jobs 8 blk_mem_gen_964_12_synth_1
-[Tue May 10 16:14:31 2022] Launched blk_mem_gen_964_12_synth_1...
-Run output will be captured here: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/blk_mem_gen_964_12_synth_1/runme.log
-export_simulation -of_objects [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_964_12/blk_mem_gen_964_12.xci] -directory E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files/sim_scripts -ip_user_files_dir E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files -ipstatic_source_dir E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/modelsim} {questa=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/questa} {riviera=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/riviera} {activehdl=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_12_1920 -dir e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip
-set_property -dict [list CONFIG.Component_Name {blk_mem_gen_12_1920} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {1920} CONFIG.Read_Width_A {12} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_12_1920]
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_mem_gen_12_1920' to 'blk_mem_gen_12_1920' is not allowed and is ignored.
-generate_target {instantiation_template} [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_12_1920/blk_mem_gen_12_1920.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_12_1920'...
+export_ip_user_files -of_objects  [get_files E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v] -no_script -reset -force -quiet
+remove_files  E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/AXIS_to_pixel_buffer.v
+add_files {E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/rgb2ycbcr.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/conv.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/lineBuffer.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/rgb2ycbcr2rgb_tb.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/ycbcr2rgb.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v}
+WARNING: [filemgmt 56-12] File 'E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v' cannot be added to the project because it already exists in the project, skipping this file
 update_compile_order -fileset sources_1
-generate_target all [get_files  e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_12_1920/blk_mem_gen_12_1920.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_12_1920'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_12_1920'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_12_1920'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_12_1920'...
-catch { config_ip_cache -export [get_ips -all blk_mem_gen_12_1920] }
-export_ip_user_files -of_objects [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_12_1920/blk_mem_gen_12_1920.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_12_1920/blk_mem_gen_12_1920.xci]
-launch_runs -jobs 8 blk_mem_gen_12_1920_synth_1
-[Tue May 10 16:16:52 2022] Launched blk_mem_gen_12_1920_synth_1...
-Run output will be captured here: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/blk_mem_gen_12_1920_synth_1/runme.log
-export_simulation -of_objects [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_12_1920/blk_mem_gen_12_1920.xci] -directory E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files/sim_scripts -ip_user_files_dir E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files -ipstatic_source_dir E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/modelsim} {questa=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/questa} {riviera=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/riviera} {activehdl=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run blk_mem_gen_12_1920_synth_1
-export_ip_user_files -of_objects  [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_12_1920/blk_mem_gen_12_1920.xci] -no_script -reset -force -quiet
-remove_files  -fileset blk_mem_gen_12_1920 e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_12_1920/blk_mem_gen_12_1920.xci
-INFO: [Project 1-386] Moving file 'e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_12_1920/blk_mem_gen_12_1920.xci' from fileset 'blk_mem_gen_12_1920' to fileset 'sources_1'.
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip
-set_property -dict [list CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {1920} CONFIG.Read_Width_A {12} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_0]
-generate_target {instantiation_template} [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -reset -force -quiet
-remove_files  e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_1920_12 -dir e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip
-set_property -dict [list CONFIG.Component_Name {blk_mem_gen_1920_12} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {1920} CONFIG.Read_Width_A {12} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_1920_12]
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_mem_gen_1920_12' to 'blk_mem_gen_1920_12' is not allowed and is ignored.
-generate_target {instantiation_template} [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_1920_12/blk_mem_gen_1920_12.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_1920_12'...
-generate_target all [get_files  e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_1920_12/blk_mem_gen_1920_12.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1920_12'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_1920_12'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_1920_12'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_1920_12'...
-catch { config_ip_cache -export [get_ips -all blk_mem_gen_1920_12] }
-export_ip_user_files -of_objects [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_1920_12/blk_mem_gen_1920_12.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_1920_12/blk_mem_gen_1920_12.xci]
-launch_runs -jobs 8 blk_mem_gen_1920_12_synth_1
-[Tue May 10 16:18:47 2022] Launched blk_mem_gen_1920_12_synth_1...
-Run output will be captured here: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/blk_mem_gen_1920_12_synth_1/runme.log
-export_simulation -of_objects [get_files e:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.srcs/sources_1/ip/blk_mem_gen_1920_12/blk_mem_gen_1920_12.xci] -directory E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files/sim_scripts -ip_user_files_dir E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files -ipstatic_source_dir E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/modelsim} {questa=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/questa} {riviera=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/riviera} {activehdl=E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_send_data, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:109]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:120]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'M_AXIS_send_data' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'data_out' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:132]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS(C_M_AX...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS(C_M_AXIS_TDA...
+Compiling module xil_defaultlib.Upsampling_Bayes(C_M00_AXIS_TDAT...
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim/xsim.dir/Upsampling_Bayes_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim/xsim.dir/Upsampling_Bayes_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri May 13 12:37:57 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri May 13 12:37:57 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 960.566 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Upsampling_Bayes_tb_behav -key {Behavioral:sim_1:Functional:Upsampling_Bayes_tb} -tclbatch {Upsampling_Bayes_tb.tcl} -view {E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/Upsampling_Bayes_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/Upsampling_Bayes_tb_behav.wcfg
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/clk was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/rst_n was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/data_in was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/pixel_out was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/trans_eff was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/buf_rden was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/buf_wren was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/stuck was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/buffer was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/buffer_count was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/pixel_out_reg was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/AXIS_to_pixel_buffer_0/trans_eff_reg was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/Super_Res_0/busy was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/fifo_wren was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/fifo_full was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/row_count was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/fifo_write_selector was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_0 was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/stream_data_fifo_1 was not found in the design.
+WARNING: Simulation object /Upsampling_Bayes_tb/Upsampling_Bayes_test/Upsampling_Bayes_M00_AXIS_inst/fifo_full_status was not found in the design.
+source Upsampling_Bayes_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Upsampling_Bayes_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 974.473 ; gain = 30.684
+run 1 us
+run 1 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_send_data, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:109]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:120]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'M_AXIS_send_data' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'data_out' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:132]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS(C_M_AX...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS(C_M_AXIS_TDA...
+Compiling module xil_defaultlib.Upsampling_Bayes(C_M00_AXIS_TDAT...
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1166.945 ; gain = 0.000
+run 1 us
+run 1 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_send_data, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:109]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:120]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'M_AXIS_send_data' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'data_out' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:132]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS(C_M_AX...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS(C_M_AXIS_TDA...
+Compiling module xil_defaultlib.Upsampling_Bayes(C_M00_AXIS_TDAT...
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1166.945 ; gain = 0.000
+run 1 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_send_data, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:109]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:120]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:127]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 32 for port 'm00_axis_tdata' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:90]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'M_AXIS_send_data' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'data_out' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:132]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS(C_M_AX...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS(C_M_AXIS_TDA...
+Compiling module xil_defaultlib.Upsampling_Bayes(C_M00_AXIS_TDAT...
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1166.945 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_send_data, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:109]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:120]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'M_AXIS_send_data' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'data_out' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:132]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS(C_M_ST...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS
+Compiling module xil_defaultlib.Upsampling_Bayes(C_M00_AXIS_STAR...
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1166.945 ; gain = 0.000
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_send_data, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:109]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:120]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'M_AXIS_send_data' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'data_out' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:132]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS_defaul...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS
+Compiling module xil_defaultlib.Upsampling_Bayes
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1166.945 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_send_data, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:109]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:120]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'M_AXIS_send_data' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'data_out' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:132]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS_defaul...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS
+Compiling module xil_defaultlib.Upsampling_Bayes
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1166.945 ; gain = 0.000
+run 1 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol m_axis_send_data, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:92]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:93]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:109]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:120]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:127]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'M_AXIS_send_data' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:91]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'data_out' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:132]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS_defaul...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS
+Compiling module xil_defaultlib.Upsampling_Bayes
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1166.945 ; gain = 0.000
+run 1 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:89]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:90]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:103]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:117]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:119]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:124]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS_defaul...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS
+Compiling module xil_defaultlib.Upsampling_Bayes
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1166.945 ; gain = 0.000
+run 1 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Upsampling_Bayes_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Upsampling_Bayes_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/S_AXIS_2_pixel_low.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_AXIS_2_pixel_low
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Super_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Super_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:89]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:90]
+INFO: [VRFC 10-2458] undeclared symbol sr_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:103]
+INFO: [VRFC 10-2458] undeclared symbol axis2pixel_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:106]
+INFO: [VRFC 10-2458] undeclared symbol pixel2axis_stuck, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:117]
+INFO: [VRFC 10-2458] undeclared symbol sr_eff, assumed default net type wire [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:119]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/pixel_high_2_M_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_high_2_M_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsampling_Bayes_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/sim_1/behav/xsim'
+"xelab -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 5df790ba734f404a9bb86d9b5b3c0020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Upsampling_Bayes_tb_behav xil_defaultlib.Upsampling_Bayes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'pixel_high_2_M_AXIS' does not have a parameter named PIXEL_WIDTH [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes.v:124]
+WARNING: [VRFC 10-5021] port 's00_axis_tstrb' is not connected on this instance [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Upsampling_Bayes_S00_AXIS_defaul...
+Compiling module xil_defaultlib.Upsampling_Bayes_M00_AXIS_defaul...
+Compiling module xil_defaultlib.S_AXIS_2_pixel_low
+Compiling module xil_defaultlib.Super_Res
+Compiling module xil_defaultlib.pixel_high_2_M_AXIS
+Compiling module xil_defaultlib.Upsampling_Bayes
+Compiling module xil_defaultlib.Upsampling_Bayes_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Upsampling_Bayes_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1166.945 ; gain = 0.000
+run all
+$stop called at time : 163801 ns : File "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" Line 70
+save_wave_config {E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.sim/Upsampling_Bayes_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [HDL 9-806] Syntax error near "reg". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/conv.v:20]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "data_enable". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/conv.v:67]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:307]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:309]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:311]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:313]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:315]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:317]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:319]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:321]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:323]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:325]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:327]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:329]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:331]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:333]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v:335]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/lineBuffer.v:39]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/lineBuffer.v:56]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "h16777216". [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/rgb2ycbcr.v:65]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rgb2ycrcb' [E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/ycbcr2rgb.v:8]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'rgb2ycrcb()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/rgb2ycbcr.v
+	(Active) Duplicate found at line 8 of file E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/ycbcr2rgb.v
+[Fri May 13 14:41:57 2022] Launched synth_1...
+Run output will be captured here: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/conv.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/lineBuffer.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/rgb2ycbcr.v] -no_script -reset -force -quiet
+remove_files  {E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/conv.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/imageControl.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/lineBuffer.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/rgb2ycbcr.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/rgb2ycbcr2rgb_tb.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/ycbcr2rgb.v] -no_script -reset -force -quiet
+remove_files  {E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/rgb2ycbcr2rgb_tb.v E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/rtl/ycbcr2rgb.v}
+export_ip_user_files -of_objects  [get_files E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v] -no_script -reset -force -quiet
+remove_files  E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri May 13 14:45:20 2022] Launched synth_1...
+Run output will be captured here: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri May 13 14:47:49 2022] Launched synth_1...
+Run output will be captured here: E:/Code/4K-Upsampling-System-on-Zynq/src/ip_repo/upsampling/upsampling.runs/synth_1/runme.log
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue May 10 16:26:34 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri May 13 14:49:36 2022...

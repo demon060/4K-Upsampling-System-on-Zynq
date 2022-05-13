@@ -1,2 +1,3 @@
 Vivado Simulator 2019.2
 Time resolution is 1 ps
+$stop called at time : 163801 ns : File "E:/Code/4K-Upsampling-System-on-Zynq/src/verilog/upsampling/Upsampling_Bayes_tb.v" Line 70

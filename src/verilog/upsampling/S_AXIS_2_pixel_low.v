@@ -8,10 +8,10 @@ module S_AXIS_2_pixel_low #(
            input wire rst_n,
            input wire [C_S_AXIS_TDATA_WIDTH-1:0] data_in,
            output wire [PIXEL_WIDTH-1:0] pixel_out,
-           output wire stuck, // 堵塞，1：缓存满或输出端堵塞
-           output wire trans_eff, // 传输有效，1：同时刻数据有效
            input wire buf_rden, // 读请求，1:下游读
-           input wire buf_wren // 写请求，1：上游写
+           input wire buf_wren, // 写请求，1：上游写
+           output wire stuck, // 堵塞，1：缓存满或输出端堵塞
+           output wire trans_eff // 传输有效，1：同时刻数据有效
        );
 // 像素buffer，缓存了每个axis数据多出来的rgb值
 reg [PIXEL_WIDTH-1:0] buffer;

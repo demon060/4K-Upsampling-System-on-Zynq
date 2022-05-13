@@ -1,10 +1,11 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../../verilog/upsampling/AXIS_to_pixel_buffer.v" \
+"../../../../../../verilog/upsampling/S_AXIS_2_pixel_low.v" \
 "../../../../../../verilog/upsampling/Super_Res.v" \
 "../../../../../../verilog/upsampling/Upsampling_Bayes.v" \
 "../../../../../../verilog/upsampling/Upsampling_Bayes_M00_AXIS.v" \
 "../../../../../../verilog/upsampling/Upsampling_Bayes_S00_AXIS.v" \
+"../../../../../../verilog/upsampling/pixel_high_2_M_AXIS.v" \
 "../../../../../../verilog/upsampling/Upsampling_Bayes_tb.v" \
 
 # compile glbl module

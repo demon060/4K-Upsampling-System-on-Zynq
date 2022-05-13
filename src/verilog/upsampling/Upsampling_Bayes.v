@@ -12,7 +12,7 @@
 		parameter integer C_S00_AXIS_TDATA_WIDTH	= 32,
 
 		// Parameters of Axi Master Bus Interface M00_AXIS
-		parameter integer C_M00_AXIS_TDATA_WIDTH	= 32,
+		parameter integer C_M00_AXIS_TDATA_WIDTH	= 128,
 		parameter integer C_M00_AXIS_START_COUNT	= 16
 	)
 	(
@@ -44,19 +44,16 @@
 
 	// axis buffer输出数据
 	(*mark_debug="true"*)wire [C_S00_AXIS_TDATA_WIDTH-1:0] s_axis_get_data;
+	(*mark_debug="true"*)wire [C_M00_AXIS_TDATA_WIDTH-1:0] m_axis_send_data;
 	// Super_Res模块在忙，不收新像素
 	(*mark_debug="true"*)wire sr_busy;
 	// axis转pixel buffer已满
-	(*mark_debug="true"*)wire axis_pixel_stuck;
+	(*mark_debug="true"*)wire axis2pixel_stuck;
 	// axis buffer为空
 	(*mark_debug="true"*)wire s_axis_empty;
-	// Super_Res输入像素有效
-	(*mark_debug="true"*)wire sr_pin_en;
-	// Super_Res输出像素有效
-	(*mark_debug="true"*)wire sr_pout_en;
-	// Super_Res的输入像素
+	// Super_Res的输入像�?
 	(*mark_debug="true"*)wire [PIXEL_WIDTH-1:0] pixel_low;
-	// Super_Res的输出像素
+	// Super_Res的输出像�?
 	(*mark_debug="true"*)wire [PIXEL_WIDTH*4-1:0] pixel_high;
 
 // Instantiation of Axi Bus Interface S00_AXIS
@@ -71,7 +68,7 @@
 		.S_AXIS_TLAST(s00_axis_tlast),
 		.S_AXIS_TVALID(s00_axis_tvalid),
 		.S_AXIS_get_data(s_axis_get_data),
-		.fifo_rden(!axis_pixel_stuck),
+		.fifo_rden(!axis2pixel_stuck),
 		.fifo_empty_flag(s_axis_empty)
 	);
 
@@ -88,25 +85,25 @@
 		.M_AXIS_TSTRB(m00_axis_tstrb),
 		.M_AXIS_TLAST(m00_axis_tlast),
 		.M_AXIS_TREADY(m00_axis_tready),
-		.M_AXIS_send_data(pixel_high),
-        .fifo_wren(sr_pout_en),
-        .fifo_full(m_axis_full)
+		.M_AXIS_send_data(m_axis_send_data),
+        .wren(pixel2axis_eff),
+        .stuck(m_axis_stuck)
 	);
 
 	// Add user logic here
 
-	AXIS_to_pixel_buffer #(
- 		.AXIS_TDATA_WIDTH(C_S00_AXIS_TDATA_WIDTH),
+	S_AXIS_2_pixel_low #(
+ 		.C_S_AXIS_TDATA_WIDTH(C_S00_AXIS_TDATA_WIDTH),
 		.PIXEL_WIDTH(PIXEL_WIDTH)
-	) AXIS_to_pixel_buffer_0 (
+	) S_AXIS_2_pixel_low_0 (
 		.clk(clk),
 		.rst_n(rst_n),
 		.data_in(s_axis_get_data),
 		.pixel_out(pixel_low),
-		.stuck(axis_pixel_stuck),
-		.trans_eff(sr_pin_en),
-		.buf_rden(!sr_busy),
-		.buf_wren(!s_axis_empty)
+		.buf_rden(!sr_stuck),
+		.buf_wren(!s_axis_empty),
+		.stuck(axis2pixel_stuck),
+		.trans_eff(axis2pixel_eff)
 	);
 
 	Super_Res #(
@@ -115,11 +112,25 @@
 		.clk(clk),
 		.rst_n(rst_n),
 		.pixel_in(pixel_low),
-		.pin_en(sr_pin_en),
 		.pixel_out(pixel_high),
-		.pout_en(sr_pout_en),
-		.busy(sr_busy),
-		.stuck(m_axis_full)
+		.pin_en(axis2pixel_eff),
+		.pout_en(!pixel2axis_stuck),
+		.stuck(sr_stuck),
+		.eff(sr_eff)
+	);
+
+	pixel_high_2_M_AXIS #(
+		.C_M_AXIS_TDATA_WIDTH(C_M00_AXIS_TDATA_WIDTH),
+		.PIXEL_WIDTH(PIXEL_WIDTH)
+	) pixel_high_2_M_AXIS_0 (
+		.clk(clk),
+		.rst_n(rst_n),
+		.pixel_in(pixel_high),
+		.data_out(m_axis_send_data),
+		.stuck(pixel2axis_stuck),
+		.trans_eff(pixel2axis_eff),
+		.buf_rden(!m_axis_stuck),
+		.buf_wren(sr_eff)
 	);
 	// User logic ends
 
